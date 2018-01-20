@@ -5,7 +5,7 @@ This level is to introduce you to the basics. You will learn how to use your
 terminal, how to write a simple terminal shell program, and basic syntax for a
 couple of widely-used, beginner friendly programming languages.
 
-1. Prepare your laptop for hacking with the guide [here](https://github.com/fouralarmfire/shell-tutorial/blob/master/osx_and_linux/setup.md#mac-osx-setup)
+1. Prepare your laptop for hacking with the guide [here](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#mac-osx-setup).
 
 1. Complete [this](https://try.github.io/) and read [this](https://git-scm.com/docs/gittutorial). From now on, everything you work on should be tracked and published in a git repository.
 
