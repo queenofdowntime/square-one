@@ -34,6 +34,9 @@ And if, while exploring, you find something (a tutorial or guide) which is so
 awesome you think it may benefit other learners, please open a [github issue](https://help.github.com/articles/creating-an-issue/)
 and let me know.
 
+This guide will be constantly updated and improved, so check back regularly to
+find the latest challenges.
+
 # Start [here](https://github.com/fouralarmfire/square-one/blob/master/outline.md)
 
 ## Report a problem with this guide
