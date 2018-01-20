@@ -9,18 +9,18 @@ couple of widely-used, beginner friendly programming languages.
 
 1. Complete [this](https://try.github.io/) and read [this](https://git-scm.com/docs/gittutorial). From now on, everything you work on should be tracked and published in a git repository.
 
-1. Complete exercises 2 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html)
+1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html)
 
-1. Complete this [Hello World exercise](https://github.com/fouralarmfire/shell-tutorial/blob/master/osx_and_linux/exercises/hello_world.md#hello-world)
+1. Complete this [Hello World exercise](https://github.com/fouralarmfire/square-one/blob/master/challenges/hello_world.md#hello-world)
 
 1. Complete [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/)
 
 1. Complete chapters 1.1 to 2.16 of [The Modern Javascript Tutorial](https://javascript.info/)
 
 1. Write the following 2 programs. You can do these in Ruby, JS or Shell. Or
-even better all three.
-	- [Fizzbuzz](https://github.com/fouralarmfire/shell-tutorial/blob/master/osx_and_linux/exercises/fizzbuzz.md#fizzbuzz)
-	- [LeapYear](https://github.com/fouralarmfire/shell-tutorial/blob/master/osx_and_linux/exercises/leap_year.md#leap-year)
+even better, all three.
+	- [Fizzbuzz](https://github.com/fouralarmfire/square-one/blob/master/challenges/fizzbuzz.md#fizzbuzz)
+	- [LeapYear](https://github.com/fouralarmfire/square-one/blob/master/challenges/leap_year.md#leap-year)
 
 
 ## Level 1
