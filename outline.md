@@ -15,9 +15,11 @@ couple of widely-used, beginner friendly programming languages.
 
 1. Complete [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/)
 
-1. Complete chapters 1.1 to 2.16 of [The Modern Javascript Tutorial](https://javascript.info/)
+1. Complete all 19 excercises of [Javascripting](https://github.com/workshopper/javascripting#javascripting)
 
-1. Write the following 2 programs. You can do these in Ruby, JS or Shell. Or
+1. Complete all 13 exercises of [LearnYouNode](https://nodeschool.io/#workshoppers)
+
+1. Write the following 2 programs. You can do these in Ruby, Node or Shell. Or
 even better, all three.
 	- [Fizzbuzz](https://github.com/fouralarmfire/square-one/blob/master/challenges/fizzbuzz.md#fizzbuzz)
 	- [LeapYear](https://github.com/fouralarmfire/square-one/blob/master/challenges/leap_year.md#leap-year)
@@ -43,7 +45,9 @@ the language(s) you'd like to improve.
 
 1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/)
 
-1. Chapters 3.1 onwards of [The Modern Javascript Tutorial](https://javascript.info/)
+1. Carry on with other exercises from [NodeSchool](https://nodeschool.io/#workshopper-list)
+
+1. [The Modern Javascript Tutorial](https://javascript.info/)
 
 1. Sign up for [CodeCademy](https://www.codecademy.com/) and complete whichever
 tracks you are interested in. (n.b. codecademy is not everyone's favourite, but
