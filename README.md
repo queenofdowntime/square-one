@@ -37,7 +37,7 @@ and let me know.
 This guide will be constantly updated and improved, so check back regularly to
 find the latest challenges.
 
-# Start [here](https://github.com/fouralarmfire/square-one/blob/master/outline.md#outline)
+#       :star::star::star::star::fire::arrow_right:   Start [here](https://github.com/fouralarmfire/square-one/blob/master/outline.md#outline)   :arrow_left::fire::star::star::star::star:
 
 ## Report a problem with this guide
 Open a [github issue](https://help.github.com/articles/creating-an-issue/<Paste>) in this repo including in your report:
