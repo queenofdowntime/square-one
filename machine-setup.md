@@ -16,7 +16,7 @@ Apple's developer tools.
 
   `xcode-select --install`
 
-1. Click `install`, `agree` and `done` when the various pop-ups appear.
+2. Click `install`, `agree` and `done` when the various pop-ups appear.
 
 ## git
 Git is a version control system which lets you publish your work online and save
@@ -29,8 +29,8 @@ state at any moment.
   git --version
   ```
 
-1. Sign up for [Github](https://github.com/) if you have not already done so, and complete their beginner's guide.
-1. Run the following two commands to save your login information to your computer. Every time you "push" (save) code to git, these credentials will be used to identify you.
+2. Sign up for [Github](https://github.com/) if you have not already done so, and complete their beginner's guide.
+3. Run the following two commands to save your login information to your computer. Every time you "push" (save) code to git, these credentials will be used to identify you.
 (The things in caps are placeholders, please use your actual information.)
 
   ```
@@ -38,10 +38,10 @@ state at any moment.
   git config --global user.name "YOUR GITHUB USERNAME or ACTUAL NAME"
   ```
 
-1. Run `ssh-keygen -t rsa -b 4096 -C "YOUR EMAIL ADDRESS"`. (Hit return to any prompts until complete.)
-1. Start the SSH agent with `eval "$(ssh-agent -s)"`. ([SSH](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) is a form of security)
-1. Add your new key to the agent: `ssh-add ~/.ssh/id_rsa`.
-1. Copy your public key to the clipboard:
+4. Run `ssh-keygen -t rsa -b 4096 -C "YOUR EMAIL ADDRESS"`. (Hit return to any prompts until complete.)
+5. Start the SSH agent with `eval "$(ssh-agent -s)"`. ([SSH](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) is a form of security)
+6. Add your new key to the agent: `ssh-add ~/.ssh/id_rsa`.
+7. Copy your public key to the clipboard:
 
   ```
   # either
@@ -51,8 +51,8 @@ state at any moment.
   # these commands are the equivalent of looking at the file and pressing <Command-C>
   ```
 
-1. Login to Github in a browser. Go to `Settings > SSH and GPG keys > New SSH key / Add SSH key`.
-1. Fill in the form fields with a name and your copied public key and click save.
+8. Login to Github in a browser. Go to `Settings > SSH and GPG keys > New SSH key / Add SSH key`.
+9. Fill in the form fields with a name and your copied public key and click save.
 
 ## Homebrew
 Homebrew is a 'package manager' for Mac: it allows you to install useful programs
@@ -63,7 +63,7 @@ to help you develop code and make your terminal prettier.
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   ```
 
-1. Run `brew doctor`: it should return `Your system is ready to brew`.
+2. Run `brew doctor`: it should return `Your system is ready to brew`.
 
 ## Atom
 Atom is a Text Editor - the program you will use to write your code.
