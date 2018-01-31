@@ -39,8 +39,9 @@ given steps, or try something [completely different](https://tour.golang.org/wel
 
 Some of the steps here are tutorials or guides similar to Level 0, some are
 links to sites which all coders use to level up by implementing simple programs.
-You don't have to follow the steps sequentially, but can click through to see
-what you feel like doing and even have multiple tracks on the go at the same time.
+You don't have to follow the steps sequentially or even do all of them, but can
+click through to see what you feel like doing and even have multiple tracks on
+the go at the same time.
 
 But... before you get to the list, the first thing you'll want to do (because
 you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-your-terminal-and-shell/).
@@ -65,6 +66,8 @@ can be a useful way to practice)
 a Bioinformatics learning/challenge site, but it is a great way to practice
 algorithms. Python is the most used language here, but you can submit your answer
 using the whichever you are more interested in learning.
+
+1. Learn to [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
 
 ## Level 2
