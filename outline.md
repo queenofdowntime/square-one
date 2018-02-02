@@ -24,6 +24,8 @@ for it.
 
 1. Complete all 13 exercises of [LearnYouNode](https://nodeschool.io/#workshoppers)
 
+1. Complete [Webapps for Beginners](http://webapps-for-beginners.rubymonstas.org/index.html)
+
 1. Write the following 2 programs. You can do these in Ruby, Node or Shell. Or
 even better, all three.
 	- [Fizzbuzz](https://github.com/fouralarmfire/square-one/blob/master/challenges/fizzbuzz.md#fizzbuzz)
@@ -55,6 +57,8 @@ the language(s) you'd like to improve.
 1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/)
 
 1. Carry on with other exercises from [NodeSchool](https://nodeschool.io/#workshopper-list)
+
+1. [Testing for Beginners](http://testing-for-beginners.rubymonstas.org/)
 
 1. [The Modern Javascript Tutorial](https://javascript.info/)
 
