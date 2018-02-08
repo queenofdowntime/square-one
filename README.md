@@ -61,10 +61,9 @@ source projects"
 - A comprehensive list of [CoderCommunities](https://www.codercommunities.com), useful
 once you have a clearer idea of where you want to take your studies.
 
+# Ready to code? :star::star::star::star::fire::arrow_right:   Start [Here](https://github.com/fouralarmfire/square-one/blob/master/outline.md#outline)   :arrow_left::fire::star::star::star::star:
 
-#       :star::star::star::star::fire::arrow_right:   Start [Here](https://github.com/fouralarmfire/square-one/blob/master/outline.md#outline)   :arrow_left::fire::star::star::star::star:
-
-## Report a problem with this guide
+### Found something wrong?
 Open a [github issue](https://help.github.com/articles/creating-an-issue/) in this repo including in your report:
 1. The step which is incorrect/broken
 1. What you tried to do to make whatever the step intended work (I'm assuming
