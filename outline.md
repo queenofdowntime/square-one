@@ -26,18 +26,13 @@ for it.
 
 1. Complete [Webapps for Beginners](http://webapps-for-beginners.rubymonstas.org/index.html)
 
-1. Write the following 2 programs. You can do these in Ruby, Node or Shell. Or
-even better, all three.
-	- [Fizzbuzz](https://github.com/fouralarmfire/square-one/blob/master/challenges/fizzbuzz.md#fizzbuzz)
-	- [LeapYear](https://github.com/fouralarmfire/square-one/blob/master/challenges/leap_year.md#leap-year)
 
 
 ## Level 1
 By the time you start this level, you should have some idea of where you would
 like to take your studies (or maybe not, but don't worry). You therefore can
-chose to narrow your focus (skip the Ruby stuff and focus on Javascript), carry
-on building on everything you began in the previous Level by completing all
-given steps, or try something [completely different](https://tour.golang.org/welcome/1).
+chose to narrow your focus (skip the Ruby stuff and focus on Javascript), have a
+go at all given steps, or try something [completely different](https://tour.golang.org/welcome/1).
 
 Some of the steps here are tutorials or guides similar to Level 0, some are
 links to sites which all coders use to level up by implementing simple programs.
@@ -64,7 +59,7 @@ the language(s) you'd like to improve.
 
 1. Sign up for [CodeCademy](https://www.codecademy.com/) and complete whichever
 tracks you are interested in. (n.b. codecademy is not everyone's favourite, but
-can be a useful way to practice)
+can be a useful way to practice or get into a new language)
 
 1. Sign up for [Rosalind](http://rosalind.info/problems/locations/). This is
 a Bioinformatics learning/challenge site, but it is a great way to practice
