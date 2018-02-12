@@ -10,7 +10,7 @@ checked. It is a great way to share knowledge and work on problems together; I
 would highly recommend it to beginners.
 
 You are free to create subgroups by topic or interest. By joining sq1 all members
-agree to adhere to the [Rules](https://github.com/fouralarmfire/square-one/blob/master/sq1-slack.md#rules) and Code of Conduct (coming soon).
+agree to adhere to the [Rules](https://github.com/fouralarmfire/square-one/blob/master/sq1-slack.md#rules) and [Code of Conduct](https://github.com/fouralarmfire/square-one/blob/master/code-of-conduct.md#sq1-code-of-conduct).
 
 [Click Here](https://join.slack.com/t/sq1/shared_invite/enQtMzExOTMyNDk1MDI4LTRmOTQ0NDM4MzY3YjljODkxNjVmM2QwYTUzYmY1MmQ2MTczMjdhZjU3NDA4NDZiYWFjNzMyNzI1MzMwNTljMjg)
 to join.
