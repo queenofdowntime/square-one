@@ -18,6 +18,8 @@ to join.
 Problems joining? [Open an issue](https://help.github.com/articles/creating-an-issue/).
 
 ## Rules
+Please try to be considerate and help keep learning to code fun by following a
+couple of simple rules:
 1. In order for people to feel comfortable posting any question they may have,
 there has to be a genuine atmosphere of "no question is stupid". This means responding
 in a kind and helpful way. No fake surprise: "oh my god I can't believe you don't
