@@ -16,8 +16,6 @@ for it.
 
 1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html)
 
-1. Complete this [Hello World exercise](https://github.com/fouralarmfire/square-one/blob/master/challenges/hello_world.md#hello-world)
-
 1. Complete [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/)
 
 1. Complete all 19 excercises of [Javascripting](https://github.com/workshopper/javascripting#javascripting)
