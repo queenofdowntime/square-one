@@ -12,7 +12,7 @@ for it.
 
 1. Prepare your laptop for hacking with the guide [here](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#mac-osx-setup).
 
-1. Complete [this](https://try.github.io/) and read [this](https://git-scm.com/docs/gittutorial). From now on, everything you work on should be tracked and published in a git repository.
+1. Learn the [basics of git](https://try.github.io/). From now on, everything you work on should be tracked and published in a git repository.
 
 1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html)
 
@@ -41,11 +41,8 @@ the go at the same time.
 But... before you get to the list, the first thing you'll want to do (because
 you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-your-terminal-and-shell/).
 
-1. Use your Github account to sign up to [CodeWars](https://www.codewars.com/) and select
-the language(s) you want to learn.
-
-1. Use your Github account to sign up for [Exercism](http://exercism.io/) and select
-the language(s) you'd like to improve.
+### Courses
+1. Use your Github account to sign up to [The Odin Project](https://www.theodinproject.com/home) and learn the basics of web development.
 
 1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/)
 
@@ -55,16 +52,24 @@ the language(s) you'd like to improve.
 
 1. [The Modern Javascript Tutorial](https://javascript.info/)
 
+1. Learn to [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+
 1. Sign up for [CodeCademy](https://www.codecademy.com/) and complete whichever
 tracks you are interested in. (n.b. codecademy is not everyone's favourite, but
 can be a useful way to practice or get into a new language)
+
+### Practice, practice, practice
+
+1. Use your Github account to sign up to [CodeWars](https://www.codewars.com/) and select
+the language(s) you want to learn.
+
+1. Use your Github account to sign up for [Exercism](http://exercism.io/) and select
+the language(s) you'd like to improve.
 
 1. Sign up for [Rosalind](http://rosalind.info/problems/locations/). This is
 a Bioinformatics learning/challenge site, but it is a great way to practice
 algorithms. Python is the most used language here, but you can submit your answer
 using the whichever you are more interested in learning.
-
-1. Learn to [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
 
 ## Level 2

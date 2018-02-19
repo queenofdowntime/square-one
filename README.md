@@ -1,5 +1,5 @@
 # Square-One
-A collection of exercises and guides designed to introduce students to the very
+A collection of **free** exercises and guides designed to introduce students to the very
 basics of computer programming.
 
 ## Prerequisites

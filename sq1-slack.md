@@ -1,5 +1,8 @@
 # sq1
 
+**note**: this group is newly created so might be a little quiet for a bit... get
+in there and make some noise :)
+
 The dedicated Slack group for new coders following this guide.
 The perfect place to ask for help, share code, pitch ideas, start study groups,
 find a friend etc etc.
