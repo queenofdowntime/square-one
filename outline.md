@@ -2,8 +2,7 @@
 
 ## Level 0
 This level is to introduce you to the basics. You will learn how to use your
-terminal, how to write a simple terminal shell program, and basic syntax for a
-couple of widely-used, beginner friendly programming languages.
+terminal and basic syntax for a couple of widely-used, beginner friendly programming languages.
 At this level, the language is somewhat irrelevant: these initial exercises
 are simply designed to get you comfortable working with your computer in a new
 way. By the end of Level 0 you should know what to look for in a tutorial for
@@ -14,15 +13,15 @@ for it.
 
 1. Learn the [basics of git](https://try.github.io/). From now on, everything you work on should be tracked and published in a git repository.
 
-1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html)
+1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html).
 
-1. Complete [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/)
+1. Complete exercises 0 to 43 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
 
-1. Complete all 19 excercises of [Javascripting](https://github.com/workshopper/javascripting#javascripting)
+1. Complete all 19 excercises of [Javascripting](https://github.com/workshopper/javascripting#javascripting).
 
-1. Complete all 13 exercises of [LearnYouNode](https://nodeschool.io/#workshoppers)
+1. Complete all 13 exercises of [LearnYouNode](https://nodeschool.io/#workshoppers).
 
-1. Complete [Webapps for Beginners](http://webapps-for-beginners.rubymonstas.org/index.html)
+1. Complete [Webapps for Beginners](http://webapps-for-beginners.rubymonstas.org/index.html).
 
 
 
@@ -44,19 +43,21 @@ you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-y
 ### Courses
 1. Use your Github account to sign up to [The Odin Project](https://www.theodinproject.com/home) and learn the basics of web development.
 
-1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/)
+1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/).
 
-1. Carry on with other exercises from [NodeSchool](https://nodeschool.io/#workshopper-list)
+1. Carry on with other exercises from [NodeSchool](https://nodeschool.io/#workshopper-list).
 
-1. [Testing for Beginners](http://testing-for-beginners.rubymonstas.org/)
+1. Complete exercises 44 to 52 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/). **skip exercise 47**.
 
-1. [The Modern Javascript Tutorial](https://javascript.info/)
+1. [Testing for Beginners](http://testing-for-beginners.rubymonstas.org/).
 
-1. Learn to [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+1. [The Modern Javascript Tutorial](https://javascript.info/).
+
+1. Learn to [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/).
 
 1. Sign up for [CodeCademy](https://www.codecademy.com/) and complete whichever
 tracks you are interested in. (n.b. codecademy is not everyone's favourite, but
-can be a useful way to practice or get into a new language)
+can be a useful way to practice or get into a new language).
 
 ### Practice, practice, practice
 
