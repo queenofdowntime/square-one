@@ -2,6 +2,28 @@
 A collection of **free** exercises and guides designed to introduce students to the very
 basics of computer programming.
 
+## Why this guide?
+The toughest part of starting to code is knowing *where* to start. (Actually there
+are many things which are much harder but you will experience that fun soon enough.)
+I started putting this guide together because I was asked so often for resources
+I would recommend for getting started, which is tough. It's easier to narrow down
+advice if the person asking knows what they want to learn, but those outside the
+industry don't yet know what sort of jobs are included under the vast umbrella of
+"software": newbies *can't* know what they want to learn.
+One thing newbies do know is webapps. They know that webapps exist and that people
+build them and that those people usually make a lot of money doing it. So they want
+to learn HTML and CSS and then *maybe* learn enough Javascript to get by.
+Personally I do not believe this is a good enough foundation on which to build
+actual coding skills, and not just because HTML and CSS **are not code**.
+Yes, you can get a fairly serviceable webapp up and running with minimal knowledge
+and very minimal code, but actual engineering takes real time and real commitment.
+
+And that is what this guide is for. It does not start with HTML and CSS. Here
+you will learn how to build the house *before* you throw paint on the walls, if you even
+still want to do so at that point. Hopefully, this guide will give you an idea
+of more potential careers than you are aware of right now, and give you a strong
+foundation to become the web developer or software engineer you want to be.
+
 ## Prerequisites
 - Absolutely no previous knowledge of programming necessary. This guide assumes
 you are a complete beginner with nothing more than enthusiasm to learn.
@@ -14,7 +36,7 @@ expert on your own learning abilities and pace. Ensure you have understood each
 exercise thoroughly before moving onto the next.
 
 #### Don't give up at the first hurdle
-Google everything. Most of programmer's time is spent on researching a problem
+Google everything. Most of a programmer's time is spent on researching a problem
 and learning how to phrase the perfect google search query. The majority of
 the answers to your questions will be found on [stackoverflow](https://stackoverflow.com/), BUT please
 refrain from simply copy-pasting the bits that you think will make your code
