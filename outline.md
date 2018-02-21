@@ -47,6 +47,8 @@ you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-y
 
 1. Carry on with other exercises from [NodeSchool](https://nodeschool.io/#workshopper-list).
 
+1. [Introduction to Test Driven Development](https://github.com/fouralarmfire/square-one/blob/master/challenges/fizzbuzz-tdd.md#fizzbuzz).
+
 1. Complete exercises 44 to 52 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/). **skip exercise 47**.
 
 1. [Testing for Beginners](http://testing-for-beginners.rubymonstas.org/).
