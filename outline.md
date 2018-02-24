@@ -41,21 +41,25 @@ But... before you get to the list, the first thing you'll want to do (because
 you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-your-terminal-and-shell/).
 
 ### Courses
+1. Node Girls' [Node Workshop](https://github.com/node-girls/node-workshop/blob/master/README.md).
+
+1. Node Girls' [Express Workshop](https://github.com/node-girls/express-workshop/blob/master/README.md).
+
 1. Use your Github account to sign up to [The Odin Project](https://www.theodinproject.com/home) and learn the basics of web development.
+
+1. [Introduction to Test Driven Development](https://github.com/fouralarmfire/square-one/blob/master/challenges/fizzbuzz-tdd.md#fizzbuzz).
 
 1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/).
 
 1. Carry on with other exercises from [NodeSchool](https://nodeschool.io/#workshopper-list).
 
-1. [Introduction to Test Driven Development](https://github.com/fouralarmfire/square-one/blob/master/challenges/fizzbuzz-tdd.md#fizzbuzz).
+1. [Testing for Beginners](http://testing-for-beginners.rubymonstas.org/).
+
+1. Learn to [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/).
 
 1. Complete exercises 44 to 52 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/). **skip exercise 47**.
 
-1. [Testing for Beginners](http://testing-for-beginners.rubymonstas.org/).
-
 1. [The Modern Javascript Tutorial](https://javascript.info/).
-
-1. Learn to [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/).
 
 1. Sign up for [CodeCademy](https://www.codecademy.com/) and complete whichever
 tracks you are interested in. (n.b. codecademy is not everyone's favourite, but
