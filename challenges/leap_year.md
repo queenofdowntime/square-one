@@ -34,11 +34,11 @@ $ ./leap 2000
 yes! 2000 is a leap year!
 ```
 
-To complete this task you will need to know about [modular arithmetic](https://betterexplained.com/articles/fun-with-modular-arithmetic/),
-[comparison operators](https://www.tutorialspoint.com/unix/unix-basic-operators.htm), [if/else statements](http://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php) and logical operators.
+To complete this task you will need to know about [modular arithmetic](https://betterexplained.com/articles/fun-with-modular-arithmetic/)
+and [logical operators](https://javascript.info/logical-operators).
 
 #### Don't forget about git
-Remember to initialise a repository in your terminal and online (do not choose initialise with a readme)
+Remember to initialise a repository in your terminal and online (do not choose to `initialise with a readme`)
 ```
 cd ~
 mkdir -p workspace/leap-year
@@ -60,59 +60,8 @@ Remember, you only need to `git push -u origin master` the first time, after tha
 Commit regularly in small incremental steps. Don't just wait until the end; you
 want to save your work as it progresses.
 
-### Logical Operators
-
-1. `||`/`-o` (OR) requires at least one of the given comparators to be true. It will only evaluate the right hand side
-if the left side returns a non-zero exit code:
-
-  - `true || true` returns true
-
-  - `true || false` returns true
-
-  - `false || true` returns true
-
-  - `false || false` returns false
-
-2. `&&`/`-a` (AND) requires both given comparators to be true. It will only evaluate the right hand side if the left side
-returns an exit code of zero:
-
-  - `true && true` returns true
-
-  - `true && false` returns false
-
-  - `false && true` returns false
-
-  - `false && false` returns false
-
-3. `!` (NOT) negates the subsequent statment or expression.
-
-  - `!true` returns false
-
-  - `!false` returns true
-
-#### Pop Quiz:
-
-What will the following return?
-
-```
-!true && true
-
-!false && !false
-
-false || !true
-
-(true || !true) && (true && !false)
-
-false && echo hey!
-
-true && echo hey!
-
-true || echo hey!
-
-false || echo hey!
-```
-
 ### Challenge Yourself!
 - Set a default for when no year is passed to your script.
-- Write a for-loop to run your leap-year calculator against every year in the last century.
+- Write a loop to run your leap-year calculator against every year in the last century.
   - make sure you print out which years are and aren't.
+- can you [TDD](https://github.com/fouralarmfire/square-one/blob/master/tutorials/fizzbuzz-tdd.md#intro-to-test-driven-development-fizzbuzz) this program?
