@@ -366,7 +366,7 @@ And that's it! You just test-drove your first program.
 But don't stop there; test-driven development is a good habit to get into and the
 majority of (sensible) companies value it very highly. Think back to small programs
 you have written and see if you can do them again through TDD. Or test drive out
-another simple game or calculator (Leap Year, maybe?).
+another simple game or calculator ([Leap Year](https://github.com/fouralarmfire/square-one/blob/master/challenges/leap_year.md), maybe?).
 
 If you are not a complete newbie to coding, go ahead and find out how you would
 use something like [capybara](https://github.com/teamcapybara/capybara#capybara)
