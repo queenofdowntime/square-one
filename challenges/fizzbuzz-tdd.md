@@ -1,4 +1,4 @@
-# Fizzbuzz
+# Intro to Test-Driven Development: Fizzbuzz
 
 **note: this tutorial is still being tested. if you encounter any problems, please
 open a github issue**
@@ -233,7 +233,7 @@ git push
 
 ## Part 6: First Refactor
 Right now we have three functions which are doing more or less the same thing.
-Let's see if we can DRY this out a bit.
+Let's see if we can [DRY](http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) this out a bit.
 1. In `lib/fizzbuzz.rb`, edit your code so that instead of 3 functions, we only
 		have 1.
 
@@ -321,5 +321,63 @@ git push
 
 [How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/e8b02e84fafadfe0e8113d280066d91abfbb9e99) at this stage.
 
-## Part 8
-*coming soon...*
+## Part 8: Bonus Round
+
+All our calculations are done and we are ready to play the game... but it doesn't
+quite work in the way we planned at the start. We can't do `$ ./fizzbuzz.rb 3`
+and expect to see `fizz` in the terminal right now.
+
+So, for bonus points, you are going to write some integration tests. Up to now we have
+been testing out each individual `unit` of code in... unit tests (obvs). Now we
+need to verify that our code integrates with the tools which are not directly part of that code
+but are going to interact with it (in this case the command line).
+
+Normally, you would write your `integration` tests in a separate place (the code too),
+but since we are only going to write three more we can just add them to the very
+end of our existing test file in a new `describe` block.
+
+You will need to find a way of executing your game from inside a test file.
+Things like [ShellOut](https://github.com/chef/mixlib-shellout#mixlibshellout) or [Rspec Command](https://github.com/coderanger/rspec-command) may help you do that,
+but there are others so take some time to look around.
+
+Drive out your code the same way as you did above: describe the first simple thing
+you expect to happen, do just enough to make it pass, then move onto the next simple thing.
+Remember to follow the errors returned by rspec; 8 times out of 10 the answers will
+be there.
+
+To make our game work properly, we have to test that:
+1. Our code can be executed (successfully, with `exit status 0`).
+1. The result will be printed to terminal output (`stdout`).
+1. We can pass mulitple arguments and see them all processed (`./fizzbuzz 1 2 3` should print `1 2 fizz`).
+
+Once you have all 13 tests passing, commit your work and push to github:
+```
+git add lib/ spec/
+git commit -m "can be run from the command line"
+git push
+```
+
+Here is one way your project could look after your [first](https://github.com/fouralarmfire/fizzbuzz/tree/908deb4859e2caf64f8892b274a53183e8d532ae), [second](https://github.com/fouralarmfire/fizzbuzz/tree/e68d20ed0782613a1cf6d773e9c7b60745e39dfb), and [third](https://github.com/fouralarmfire/fizzbuzz/tree/085ad60e7b91008eaf47d3a7bd62d23df88e6a30) tests.
+
+## WooHoo!!
+
+And that's it! You just test-drove your first program.
+
+But don't stop there; test-driven development is a good habit to get into and the
+majority of (sensible) companies value it very highly. Think back to small programs
+you have written and see if you can do them again through TDD. Or test drive out
+another simple game or calculator (Leap Year, maybe?).
+
+If you are not a complete newbie to coding, go ahead and find out how you would
+use something like [capybara](https://github.com/teamcapybara/capybara#capybara)
+with rspec to test drive your [sinatra](http://sinatrarb.com/) webapp.
+
+There is a testing framework (often much more than one) for every language,
+so go ahead and play Fizzbuzz again in the one of your choice.
+
+In fact, small exercises like Fizzbuzz are a great way to get to grips with a new language
+and its testing framework; it's my personal goto for the first thing I write in
+whatever new thing I am trying.
+
+At some point I will be going on to write another, more challenging TDD tutorial
+so watch this space. :)
