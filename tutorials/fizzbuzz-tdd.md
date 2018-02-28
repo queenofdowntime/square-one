@@ -1,5 +1,15 @@
 # Intro to Test-Driven Development: Fizzbuzz
 
+To complete this tutorial, you will need to have the following installed:
+- Ruby
+- Git
+- A text editor
+- A terminal or command prompt (we will be working mainly from the terminal, if
+	you are not comfortable using yours, you may want to complete a [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html)
+	before you continue).
+
+Think you are missing something? [Check/Install here](https://github.com/fouralarmfire/square-one/blob/master/tutorials/tdd-setup.md).
+
 ## Task:
 Using [TDD](https://www.agilealliance.org/glossary/tdd), write a program which
 will help you cheat at the drinking game fizzbuzz.
