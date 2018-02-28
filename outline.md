@@ -28,11 +28,12 @@ for it.
 ## Level 1
 By the time you start this level, you should have some idea of where you would
 like to take your studies (or maybe not, but don't worry). You therefore can
-chose to narrow your focus (skip the Ruby stuff and focus on Javascript), have a
+chose to narrow your focus (skip the Ruby stuff and focus on JavaScript), have a
 go at all given steps, or try something [completely different](https://tour.golang.org/welcome/1).
 
 Some of the steps here are tutorials or guides similar to Level 0, some are
 links to sites which all coders use to level up by implementing simple programs.
+They mainly involve Ruby and JavaScript, but similar languages are also listed.
 You don't have to follow the steps sequentially or even do all of them, but can
 click through to see what you feel like doing and even have multiple tracks on
 the go at the same time.
@@ -40,7 +41,7 @@ the go at the same time.
 But... before you get to the list, the first thing you'll want to do (because
 you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-your-terminal-and-shell/).
 
-### Courses
+#### Courses
 1. Node Girls' [Node Workshop](https://github.com/node-girls/node-workshop/blob/master/README.md).
 
 1. Node Girls' [Express Workshop](https://github.com/node-girls/express-workshop/blob/master/README.md).
@@ -65,7 +66,7 @@ you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-y
 tracks you are interested in. (n.b. codecademy is not everyone's favourite, but
 can be a useful way to practice or get into a new language).
 
-### Practice, practice, practice
+#### Practice, practice, practice
 
 1. Use your Github account to sign up to [CodeWars](https://www.codewars.com/) and select
 the language(s) you want to learn.
