@@ -28,7 +28,8 @@ state at any moment.
   ```
   git --version
   ```
-
+  If that returned something like `command not found`, you can download and install
+  git [here](https://git-scm.com/download/mac).
 2. Sign up for [Github](https://github.com/) if you have not already done so, and complete their beginner's guide.
 3. Run the following two commands to save your login information to your computer. Every time you "push" (save) code to git, these credentials will be used to identify you.
 (The things in caps are placeholders, please use your actual information.)
