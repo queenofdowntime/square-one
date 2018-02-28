@@ -1,8 +1,5 @@
 # Intro to Test-Driven Development: Fizzbuzz
 
-**note: this tutorial is still being tested. if you encounter any problems, please
-open a github issue**
-
 ## Task:
 Using [TDD](https://www.agilealliance.org/glossary/tdd), write a program which
 will help you cheat at the drinking game fizzbuzz.
@@ -188,7 +185,7 @@ to force ourselves to do the right thing.
 1. Back in `lib/fizzbuzz.rb` we need to make our function work out whether the
 	`number` it is being passed as an argument (which right now we are ignoring) is
 	actually divisible by three. To do that we need to use modular arithmetic: if
-	`number` can be even divided by 3, it should return 0 (i.e. not have a remainder).
+	`number` can be evenly divided by 3, it should return 0 (i.e. not have a remainder).
 	```rb
 	def is_divisible_by_three?(number)
 		number % 3 == 0
@@ -199,7 +196,7 @@ to force ourselves to do the right thing.
 
 [How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/0cad7726f860a743ba2ffe5cf0c6c11a8f053fee) at this stage.
 
-## Part 5: Lather, Rinse, Repeat
+## Part 5: Around we go again...
 
 **Steps**:
 1. In `spec/fizzbuzz_spec.rb`, add another `it` block (again still within the same `context` block)
@@ -209,7 +206,7 @@ to force ourselves to do the right thing.
 		expect(is_divisible_by_five?(5)).to be true
 	end
 	```
-1. Run the tests. Do you see `undefined method` is_divisible_by_five?'`?
+1. Run the tests. Do you see `undefined method 'is_divisible_by_five?'`?
 1. Go define `is_divisible_by_five?` in `lib/fizzbuzz.rb`. (just define, don't make it
 do anything.)
 1. Run the tests. `expected true, got nil`? Make your function return `true`.
@@ -219,7 +216,7 @@ do anything.)
 
 2 functions in and we are starting to see a pattern here, but let's leave off
 refactoring just a little while longer and move onto the last calculation.
-By now you should know the pattern, so go ahead and write 2 more tests for a function
+By now you should know the routine, so go ahead and write 2 more tests for a function
 which knows if a number `is_divisible_by_three_and_five`.
 
 Once you have all 6 tests passing, commit your work and push to github:
@@ -234,8 +231,8 @@ git push
 ## Part 6: First Refactor
 Right now we have three functions which are doing more or less the same thing.
 Let's see if we can [DRY](http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) this out a bit.
-1. In `lib/fizzbuzz.rb`, edit your code so that instead of 3 functions, we only
-		have 1.
+1. In `lib/fizzbuzz.rb`, edit your code so that the 3 `is_divisible_by_*?` functions
+		are replaced by just 1.
 
 	```rb
 	def is_divisible_by?(number, divisor)
