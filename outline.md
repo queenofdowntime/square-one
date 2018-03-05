@@ -81,4 +81,9 @@ using the whichever you are more interested in learning.
 
 
 ## Level 2
-Coming soon ...
+This is where is gets tricky. You are not a complete newbie any more, and will
+probably roll your eyes at yet another "X for beginners" tutorial. Unfortunately,
+there are not many tutorials out there for "I'm ready to get into it for real now".
+More things will be added to this level soon, but for now see how you get on with:
+
+1. Learn how to contribute to Open Source repositories on [Open Source Friday](https://opensourcefriday.com/).
