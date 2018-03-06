@@ -46,6 +46,8 @@ you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-y
 
 1. Node Girls' [Express Workshop](https://github.com/node-girls/express-workshop/blob/master/README.md).
 
+1. [The Viking Code School Prep Work](http://www.vikingcodeschool.com/prep).
+
 1. Use your Github account to sign up to [The Odin Project](https://www.theodinproject.com/home) and learn the basics of web development.
 
 1. [Introduction to Test Driven Development](https://github.com/fouralarmfire/square-one/blob/master/tutorials/fizzbuzz-tdd.md#intro-to-test-driven-development-fizzbuzz).
@@ -63,8 +65,9 @@ you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-y
 1. [The Modern Javascript Tutorial](https://javascript.info/).
 
 1. Sign up for [CodeCademy](https://www.codecademy.com/) and complete whichever
-tracks you are interested in. (n.b. codecademy is not everyone's favourite, but
-can be a useful way to practice or get into a new language).
+tracks you are interested in. (n.b. codecademy is not everyone's favourite, and can give
+a false sense of confidence since newbies are unaware of just how much magic is
+happening in the background to help them along.)
 
 #### Practice, practice, practice
 
@@ -84,6 +87,9 @@ using the whichever you are more interested in learning.
 This is where is gets tricky. You are not a complete newbie any more, and will
 probably roll your eyes at yet another "X for beginners" tutorial. Unfortunately,
 there are not many tutorials out there for "I'm ready to get into it for real now".
-More things will be added to this level soon, but for now see how you get on with:
+Now would be a good time to read [this article](http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard), and prepare yourself for things
+getting tougher.
+
+More steps will be added to this level soon, but for now see how you get on with:
 
 1. Learn how to contribute to Open Source repositories on [Open Source Friday](https://opensourcefriday.com/).
