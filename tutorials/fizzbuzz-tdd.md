@@ -43,7 +43,7 @@ $ ./fizzbuzz.rb 7
 	cd workspace/fizzbuzz
 	git init
 	git remote add origin <URL OF YOUR REPO ONLINE>
-	echo "hey! I'm learning tdd!" > README.md
+	echo "tdd exercise" > README.md
 	git add README.md
 	git commit -m "readme.md"
 	git push -u origin master
@@ -344,7 +344,7 @@ but since we are only going to write three more we can just add them to the very
 end of our existing test file in a new `describe` block.
 
 You will need to find a way of executing your game from inside a test file.
-Things like [ShellOut](https://github.com/chef/mixlib-shellout#mixlibshellout) or [Rspec Command](https://github.com/coderanger/rspec-command) may help you do that,
+Things like [ShellOut](https://github.com/chef/mixlib-shellout#mixlibshellout) or [Rspec Command](https://github.com/coderanger/rspec-command#rspec-command) may help you do that,
 but there are others so take some time to look around.
 
 Drive out your code the same way as you did above: describe the first simple thing
