@@ -93,3 +93,5 @@ getting tougher.
 More steps will be added to this level soon, but for now see how you get on with:
 
 1. Learn how to contribute to Open Source repositories on [Open Source Friday](https://opensourcefriday.com/).
+
+1. Build games, sites and more by editing existing codebases on [Glitch](https://glitch.com/).
