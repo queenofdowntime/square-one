@@ -77,7 +77,7 @@ So let's begin by opening `iTerm` or `terminal`, and creating the local version.
 	and create a directory for our first project. We are going to be creating a
 	simple `hello-world` terminal program, so let's call our project that:
 
-	```
+	```sh
 	mkdir hello-world
 	cd hello-world
 	```
@@ -124,7 +124,7 @@ different order, so don't go copying and pasting the whole lot.
 	(You can copy and paste the URL from the 5th line of the commands which Github
 	gives you.)
 
-	```
+	```sh
 	git remote add origin git@github.com:YOUR_USERNAME/hello-world.git
 	```
 
@@ -164,7 +164,7 @@ different order, so don't go copying and pasting the whole lot.
 
 	So we are going to use `echo` to create a file with just one line in it:
 
-	```
+	```sh
 	echo "# learning about git" >> README.md
 	```
 
@@ -200,7 +200,7 @@ different order, so don't go copying and pasting the whole lot.
 	figure out what a section of code does and why it was written.
 
 	To commit your README run:
-	```
+	```sh
 	git commit -m "first commit, adds readme"
 	```
 
@@ -213,7 +213,7 @@ different order, so don't go copying and pasting the whole lot.
 1. Now we need to make the remote version match the local version.
 	To do that, we have to `push` our commits to our remote:
 
-	```
+	```sh
 	git push -u origin master
 	```
 

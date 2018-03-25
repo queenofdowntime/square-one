@@ -14,7 +14,9 @@ Use iTerm rather than Terminal in future.
 Apple's developer tools.
 1. Copy and paste the following into your terminal and press Enter:
 
-  `xcode-select --install`
+  ```sh
+  xcode-select --install
+  ```
 
 2. Click `install`, `agree` and `done` when the various pop-ups appear.
 
@@ -25,7 +27,7 @@ means that you never really lose earlier versions: you can return to a previous
 state at any moment.
 1. Type the following into your terminal and press Enter:
 
-  ```
+  ```sh
   git --version
   ```
   If that returned something like `command not found`, you can download and install
@@ -36,7 +38,7 @@ state at any moment.
 3. Run the following two commands to save your login information to your computer. Every time you "push" (save) code to git, these credentials will be used to identify you.
 (The things in caps are placeholders, please use your actual information.)
 
-  ```
+  ```sh
   git config --global user.email "YOUR EMAIL ADDRESS"
   git config --global user.name "YOUR GITHUB USERNAME or ACTUAL NAME"
   ```
@@ -46,7 +48,7 @@ state at any moment.
 6. Add your new key to the agent: `ssh-add ~/.ssh/id_rsa`.
 7. Copy your public key to the clipboard:
 
-  ```
+  ```sh
   # either
   pbcopy < ~/.ssh/id_rsa.pub
   # or
@@ -62,7 +64,7 @@ Homebrew is a 'package manager' for Mac: it allows you to install useful program
 to help you develop code and make your terminal prettier.
 1. Copy and paste into your terminal
 
-  ```
+  ```sh
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   ```
 
