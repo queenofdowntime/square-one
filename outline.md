@@ -15,6 +15,8 @@ for it.
 
 1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html).
 
+1. Learn [how to set up coding projects](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-a-new-project).
+
 1. Complete exercises 0 to 43 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
 
 1. Complete all 19 excercises of [Javascripting](https://github.com/workshopper/javascripting#javascripting).
