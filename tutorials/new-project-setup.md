@@ -250,5 +250,29 @@ different order, so don't go copying and pasting the whole lot.
 
 	Congratulations! You have set up your project and are now ready to get to work.
 
+## Part 6: Writing and publishing our first program
+We are going to be writing some actual code now, and learning some more about the
+command line and how your computer runs programs.
 
-This tutorial is a work in progress. More coming soon....
+**Steps**:
+
+1. Complete the first [Hello World](https://github.com/fouralarmfire/square-one/blob/master/tutorials/hello-world-1.md#hello-world-1) exercise.
+1. When your `hello` program is working (i.e. you can run `./hello` in the terminal
+	and see `Hello World!` printed back to you), run `git status`. You should see
+	that there is a new untracked file in your project.
+1. Run `git add hello` to track your program.
+1. Run `git status` again to verify that it is being tracked.
+1. Run `git commit -m "new 'hello' program - says Hello World!"` to commit your new
+	project state.
+1. Run `git log` to see your growing project history.
+1. Finally we can run `git push` to send our code to the remote version.
+
+	**Note**: this time we did not need to run the push command with `-u origin master`.
+	That is because git stored the information about which upstream branch we want
+	to use as the main one. From now on, all we need to say is `git push`.
+
+1. You can now navigate to the online repo in your browser, and see your `hello` program.
+
+
+
+### This tutorial is a work in progress. Refresh regularly for updates.
