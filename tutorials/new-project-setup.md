@@ -168,9 +168,6 @@ different order, so don't go copying and pasting the whole lot.
 	echo "# learning about git" >> README.md
 	```
 
-	If you want to add more information to your README, you can open it up later
-	with a text editor.
-
 1. Now that we have created the first file in our project, we want git to track
 	it.
 
@@ -274,5 +271,25 @@ command line and how your computer runs programs.
 1. You can now navigate to the online repo in your browser, and see your `hello` program.
 
 
+## Part 7: Taking notes
+
+Since we are learning new things, it would be handy to use the README of our repo
+to document what we have learned after each section. The `.md` extension stands
+for markdown and you can learn how to render documentation using markdown [here](https://guides.github.com/features/mastering-markdown/).
+
+**Steps**:
+
+1. Open your README.md in a text editor. 
+1. Summarise what you have learned so far.
+1. Commit and push your changes.
+
+	```
+	git add README.md
+	git commit -m "update readme: parts 1 to 6 notes"
+	git push
+	```
+
+From now on, for every project or tutorial you do, take notes on what you learn
+like this so that you keep them together with the code you write.
 
 ### This tutorial is a work in progress. Refresh regularly for updates.
