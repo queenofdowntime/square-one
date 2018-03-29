@@ -11,9 +11,12 @@ To complete this task you will need to have learned how to use the [Command Line
 and [how to set up a new project](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-a-new-project).
 You should also have [set up your computer](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#mac-osx-setup) to be ready to code.
 
+TODO: what sort of program or language is this? explain what a shell and a 
+shell script is
+
 ## Part 1: say "Hello World!"
 
-Steps:
+**Steps**:
 
 1. In your project directory, create a file called `hello`:
 

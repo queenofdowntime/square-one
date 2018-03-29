@@ -6,7 +6,7 @@ and know [how to use your terminal](https://learnpythonthehardway.org/python3/ap
 you can use both to manage your projects and exercises as you learn.
 
 This tutorial will cover the steps you should take every time you start a new
-project.
+project, and then how to manage your project effectively.
 
 ## tldr summary of commands
 For if you have already read the whole way through this tutorial and are just
@@ -283,7 +283,7 @@ for markdown and you can learn how to render documentation using markdown [here]
 1. Summarise what you have learned so far.
 1. Commit and push your changes.
 
-	```
+	```sh
 	git add README.md
 	git commit -m "update readme: parts 1 to 6 notes"
 	git push
@@ -291,5 +291,87 @@ for markdown and you can learn how to render documentation using markdown [here]
 
 From now on, for every project or tutorial you do, take notes on what you learn
 like this so that you keep them together with the code you write.
+
+## Part 8: Creating a work in progress branch
+Let's add a new feature to our "Hello World!" program: right now it only greets
+the world, but it would be cool if it could say hello to specific people.
+
+**Steps**:
+
+1. Complete the second [Hello World](https://github.com/fouralarmfire/square-one/blob/master/tutorials/hello-world-2.md#hello-world-2) exercise.
+1. Run `git status`. It should say that your `hello` file has changed.
+
+	This time, we are not going to commit to master. Our "Hello World!" program
+	is in an unfinished state: it can't say hello to the world anymore, just to
+	whichever arg is passed on the command line.
+
+	When you have a project which others may be using (an app or a computer program)
+	it is generally bad form to completely change from the original functionality.
+
+	Imagine if a website you use often were completely to change the way it wanted
+	users to interact with it. You would probably be pretty frustrated, since the
+	reason you use that site so often is because you like the way it works and know
+	how to.
+
+	So, developers have to ensure that when they add new functionality, their users
+	experience no disruption in their usual service. If there is a grand plan to
+	overhaul the whole thing, it must be done incrementally, usually by inviting
+	users to try out the new system without removing the old.
+
+	This means that when we made our `hello` program say hello to just one person
+	at a time, we broke that contract with our users. Our new feature is still a
+	work in progress so we should not push it to master just yet.
+
+	Of course, we could just jump right in and fix it so that both the original
+	feature and the new work perfectly together, but then we would learn nothing
+	about branch workflow. Branches (along with Pull Requests) are also how coders
+	contribute to others' repos.
+
+	Let's pretend that it's the end of the day and we want to go home, or that we
+	have to run off to a very important meeting. We stil have work to do but we
+	want to ensure that what we have done so far is saved somewhere we can't spill
+	coffee on it.
+
+	So in order to not pollute the master branch, we are going to push to a wip
+	(work in progress) branch.
+
+1. Create your new branch by running:
+
+	```sh
+	git checkout -b wip-hello-name
+	```
+
+	Your computer should return `Switched to a new branch 'wip-hello-name'`
+	`checkout` is the instruction to switch branches, and `-b` instructs git to 
+	create a new branch if the one you are switching to does not already exist.
+
+1. Now you can add and commit to your wip branch safely away from the main branch:
+
+	```sh
+	git add hello
+	git commit -m "say hello to person"
+	```
+
+1. Push your branch to Github. (We have to be clear which branch we are pushing
+	to here, as we haven't told Github to track this one.)
+
+	```sh
+	git push origin wip-hello-name
+	```
+
+1. If you go to your Github repo in your browser now, you'll see that your master
+	branch has no record of your 'wip' commit. But, if you click on the `Branch:`
+	dropdown button to the left, and switch to your `wip-hello-name` branch, you
+	should see that this branch has your new experimental changes.
+
+1. Before we finish this section, you may want to update your README to document
+	what you have learned. Don't forget to commit and push afterwards:
+
+	```sh
+	git add README.md
+	git commit -m "how to create a branch"
+	git push origin wip-hello-name
+	```
+
 
 ### This tutorial is a work in progress. Refresh regularly for updates.
