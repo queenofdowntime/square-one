@@ -1,4 +1,4 @@
-# How to set up a new project
+# How to set up and manage a new project
 
 So now that you have learned the [basics of git](https://try.github.io/levels/1/challenges/2),
 have [set up git properly](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#git) on your computer
@@ -219,7 +219,7 @@ different order, so don't go copying and pasting the whole lot.
 	The git workflow is based entirely around branches. Every project has one main
 	branch, `master`: this is the version of your project which must always be kept
 	in a fully working state. You should never commit broken or in-progress code
-	to master.
+	to `master`.
 
 	If you have any new ideas, or experiments you want to test out, they should be
 	built on a parallel branch. This branch is based upon `master` but will not
@@ -229,7 +229,7 @@ different order, so don't go copying and pasting the whole lot.
 	work for later.
 
 	When your experiments work out, or you finish that new idea, you can pull those
-	commits onto master, and carry on normally.
+	commits onto `master`, and carry on normally.
 
 	We will go over how to work with more branches later; for now let's just stick
 	with `master`.
@@ -292,6 +292,9 @@ for markdown and you can learn how to render documentation using markdown [here]
 From now on, for every project or tutorial you do, take notes on what you learn
 like this so that you keep them together with the code you write.
 
+#### Congratulations! You now know about basic project management. Keep going to learn more :).
+
+# Bonus points section! (More complex git flow)
 ## Part 8: Creating a work in progress branch
 Let's add a new feature to our "Hello World!" program: right now it only greets
 the world, but it would be cool if it could say hello to specific people.
@@ -301,7 +304,7 @@ the world, but it would be cool if it could say hello to specific people.
 1. Complete the second [Hello World](https://github.com/fouralarmfire/square-one/blob/master/tutorials/hello-world-2.md#hello-world-2) exercise.
 1. Run `git status`. It should say that your `hello` file has changed.
 
-	This time, we are not going to commit to master. Our "Hello World!" program
+	This time, we are not going to commit to `master`. Our "Hello World!" program
 	is in an unfinished state: it can't say hello to the world anymore, just to
 	whichever arg is passed on the command line.
 
@@ -320,7 +323,7 @@ the world, but it would be cool if it could say hello to specific people.
 
 	This means that when we made our `hello` program say hello to just one person
 	at a time, we broke that contract with our users. Our new feature is still a
-	work in progress so we should not push it to master just yet.
+	work in progress so we should not push it to `master` just yet.
 
 	Of course, we could just jump right in and fix it so that both the original
 	feature and the new work perfectly together, but then we would learn nothing
@@ -328,11 +331,11 @@ the world, but it would be cool if it could say hello to specific people.
 	contribute to others' repos.
 
 	Let's pretend that it's the end of the day and we want to go home, or that we
-	have to run off to a very important meeting. We stil have work to do but we
+	have to run off to a very important meeting. We still have work to do but we
 	want to ensure that what we have done so far is saved somewhere we can't spill
 	coffee on it.
 
-	So in order to not pollute the master branch, we are going to push to a wip
+	So in order to not pollute the `master` branch, we are going to push to a wip
 	(work in progress) branch.
 
 1. Create your new branch by running:
@@ -341,8 +344,8 @@ the world, but it would be cool if it could say hello to specific people.
 	git checkout -b wip-hello-name
 	```
 
-	Your computer should return `Switched to a new branch 'wip-hello-name'`
-	`checkout` is the instruction to switch branches, and `-b` instructs git to 
+	Your computer should return `Switched to a new branch 'wip-hello-name'`.
+	`checkout` is the instruction to switch branches, and `-b` tells git to 
 	create a new branch if the one you are switching to does not already exist.
 
 1. Now you can add and commit to your wip branch safely away from the main branch:
@@ -359,7 +362,7 @@ the world, but it would be cool if it could say hello to specific people.
 	git push origin wip-hello-name
 	```
 
-1. If you go to your Github repo in your browser now, you'll see that your master
+1. If you go to your Github repo in your browser now, you'll see that your `master`
 	branch has no record of your 'wip' commit. But, if you click on the `Branch:`
 	dropdown button to the left, and switch to your `wip-hello-name` branch, you
 	should see that this branch has your new experimental changes.
@@ -372,6 +375,53 @@ the world, but it would be cool if it could say hello to specific people.
 	git commit -m "how to create a branch"
 	git push origin wip-hello-name
 	```
+
+## Part 9: Merging branches
+
+Now let's finish our new feature and merge everything back into `master`.
+
+**Steps**:
+
+1. Complete the third [Hello World](https://github.com/fouralarmfire/square-one/blob/master/tutorials/hello-world-3.md#hello-world-3) exercise.
+1. Once your program is able to say hello both to one person and the world, commit
+	your changes and push to your 'wip' branch:
+
+	```
+	git add hello
+	git commit -m "say hello to person and world"
+	git push origin wip-hello-name
+	```
+
+1. Again, if you go to your repo online, you will see that `master` has no record
+	of your 2 commits but `wip-hello-name` does.
+	Now we need to get the 'wip' work into `master`, for all your users to enjoy.
+
+1. You can also see which commits are on which branch from the command line.
+	From your `wip-hello-name` branch, you can run `git log` and see your two
+	'wip' commits as well as your original commits which you did on `master`.
+
+	Switch back to the `master` branch with `git checkout master` and run `git log`
+	again. You should see that `master` only has the commits you made before you
+	started working on the new feature.
+
+	To merge those commits into `master`, we need to run:
+
+	```sh
+	git merge wip-hello-name
+	```
+
+	Now if we run `git log` again, we see that `master` now has the commits we
+	made on `wip-hello-name`. We can now push our new feature on `master`: `git push`.
+
+1. After `master` is up to date we can delete both our local and remote versions
+	of `wip-hello-name`:
+
+	```sh
+	git branch -d wip-hello-name # delete local
+	git push origin --delete wip-hello-name # delete remote
+	```
+
+1. Don't forget to update your README with what you have learned.
 
 
 ### This tutorial is a work in progress. Refresh regularly for updates.
