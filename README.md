@@ -11,10 +11,10 @@ advice if the person asking knows what they want to learn, but those outside the
 industry don't yet know what sort of jobs are included under the vast umbrella of
 "software": newbies *can't* know what they want to learn.
 One thing newbies do know is webapps. They know that webapps exist and that people
-build them and that those people usually make a lot of money doing it. So they want
-to learn HTML and CSS and then *maybe* learn enough Javascript to get by.
+build them and that those people usually make a lot of money (and have a lot of fun) doing it. So they want
+to learn HTML and CSS and then try learn enough Javascript to get by.
 Personally I do not believe this is a good enough foundation on which to build
-actual coding skills, and not just because HTML and CSS **are not code**.
+actual coding skills, and not just because HTML and CSS are not *really* code.
 Yes, you can get a fairly serviceable webapp up and running with minimal knowledge
 and very minimal code, but actual engineering takes real time and real commitment.
 
@@ -74,8 +74,9 @@ is perfect (yet), but the good ones are aware of that and are working to make th
 spaces good for everyone.
 
 Here's a selection I suggest checking out:
-- [#sq1](https://github.com/fouralarmfire/square-one/blob/master/sq1-slack.md#sq1) -> The dedicated Slack group for newbies following this guide (recommended)
-- [#codebuddies](https://codebuddies.org/) -> "a community of learners who help each other through conversations on Slack and peer-to-peer organized study groups and virtual hangouts."
+- [#sq1](https://github.com/fouralarmfire/square-one/blob/master/sq1-slack.md#sq1) -> The dedicated Slack group for newbies following this guide
+- [#codebuddies](https://codebuddies.org/) -> "a community of learners who help
+each other through conversations on Slack and peer-to-peer organized study groups and virtual hangouts."
 - [#devchat](https://devchat.devolio.net/) -> "a community of developers, asking
 and answering questions, solving challenges, and having a good time learning together"
 - [#codecommunity](https://thecodeteam.com/community/) -> "The goal of the {code}
