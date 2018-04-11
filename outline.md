@@ -11,17 +11,15 @@ for it.
 
 1. Prepare your laptop for hacking with the guide [here](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#mac-osx-setup).
 
-1. Learn the [basics of git](https://try.github.io/). From now on, everything you work on should be tracked and published in a git repository.
+1. Learn the [basics of git](https://try.github.io/).
 
 1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html).
 
-1. Learn [how to set up coding projects](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-and-manage-a-new-project).
+1. Learn [how to set up coding projects](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-and-manage-a-new-project). From now on, everything you work on should be tracked and published in a git repository.
 
 1. Complete exercises 0 to 43 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
 
 1. Complete all 19 excercises of [Javascripting](https://github.com/workshopper/javascripting#javascripting).
-
-1. Complete all 13 exercises of [LearnYouNode](https://nodeschool.io/#workshoppers).
 
 1. Complete [Webapps for Beginners](http://webapps-for-beginners.rubymonstas.org/index.html).
 
@@ -55,6 +53,8 @@ you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-y
 1. [Introduction to Test Driven Development](https://github.com/fouralarmfire/square-one/blob/master/tutorials/fizzbuzz-tdd.md#intro-to-test-driven-development-fizzbuzz).
 
 1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/).
+
+1. Complete all 13 exercises of [LearnYouNode](https://nodeschool.io/#workshoppers).
 
 1. Carry on with other exercises from [NodeSchool](https://nodeschool.io/#workshopper-list).
 
