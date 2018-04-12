@@ -79,6 +79,9 @@ the language(s) you want to learn.
 1. Use your Github account to sign up for [Exercism](http://exercism.io/) and select
 the language(s) you'd like to improve.
 
+1. Use your Github account to sign up for [CodingGame](https://www.codingame.com) and
+build games while you learn.
+
 1. Sign up for [Rosalind](http://rosalind.info/problems/locations/). This is
 a Bioinformatics learning/challenge site, but it is a great way to practice
 algorithms. Python is the most used language here, but you can submit your answer
