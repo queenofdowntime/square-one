@@ -1,7 +1,6 @@
 # How to set up and manage a new project
 
-So now that you have learned the [basics of git](https://try.github.io/levels/1/challenges/2),
-have [set up git properly](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#git) on your computer
+So now that you have [set up git properly](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#git) on your computer
 and know [how to use your terminal](https://learnpythonthehardway.org/python3/appendixa.html),
 you can use both to manage your projects and exercises as you learn.
 

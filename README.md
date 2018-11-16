@@ -85,7 +85,7 @@ source projects"
 - A comprehensive list of [CoderCommunities](https://www.codercommunities.com), useful
 once you have a clearer idea of where you want to take your studies.
 
-# Ready to code? :star::star::star::star::fire::arrow_right:   Start [Here](https://github.com/fouralarmfire/square-one/blob/master/outline.md#outline)   :arrow_left::fire::star::star::star::star:
+# Ready to code? :star::fire::arrow_right:   Start [Here](https://github.com/fouralarmfire/square-one/blob/master/outline.md#outline)   :arrow_left::fire::star:
 
 ### Found something wrong?
 Open a [github issue](https://help.github.com/articles/creating-an-issue/) in this repo including in your report:

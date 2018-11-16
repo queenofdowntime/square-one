@@ -11,11 +11,9 @@ for it.
 
 1. Prepare your laptop for hacking with the guide [here](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#mac-osx-setup).
 
-1. Learn the [basics of git](https://try.github.io/).
+1. Learn [how to to use git to manage projects](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-and-manage-a-new-project). From now on, everything you work on should be tracked and published in a git repository.
 
 1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html).
-
-1. Learn [how to set up coding projects](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-and-manage-a-new-project). From now on, everything you work on should be tracked and published in a git repository.
 
 1. Complete exercises 0 to 43 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
 
