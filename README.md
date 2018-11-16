@@ -74,7 +74,6 @@ is perfect (yet), but the good ones are aware of that and are working to make th
 spaces good for everyone.
 
 Here's a selection I suggest checking out:
-- [#sq1](https://github.com/fouralarmfire/square-one/blob/master/sq1-slack.md#sq1) -> The dedicated Slack group for newbies following this guide
 - [#codebuddies](https://codebuddies.org/) -> "a community of learners who help
 each other through conversations on Slack and peer-to-peer organized study groups and virtual hangouts."
 - [#devchat](https://devchat.devolio.net/) -> "a community of developers, asking
