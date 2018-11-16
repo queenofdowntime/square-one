@@ -410,6 +410,10 @@ Now let's finish our new feature and merge everything back into `master`.
 	git merge wip-hello-name
 	```
 
+	This may open a merge commit message in the Vim text editor in your terminal. To quit Vim, type `:wq`.
+	If unpredictacble things start to happen while in Vim, press the Escape key first, and then `:wq`.
+	(You can learn more about how to use the Vim text editor by typing `vimtutor` into a new terminal window.)
+
 	Now if we run `git log` again, we see that `master` now has the commits we
 	made on `wip-hello-name`. We can now push our new feature on `master`: `git push`.
 
