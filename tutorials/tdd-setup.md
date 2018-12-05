@@ -1,11 +1,21 @@
 # Windows
 
+Do the following using your Command Prompt unless told otherwise.
+
 #### Ruby
 1. Check whether Ruby is installed with: `ruby --version`
 	1. If you don't see something like `ruby 2.5.0p0 (2017-12-25 revision 61468)`,
 			you will need to [install Ruby](https://rubyinstaller.org/).
 	1. Once the installers have run, select `Start Command Prompt with Ruby` from your start menu.
 	1. Verify that Ruby is now installed with: `ruby --version`
+
+#### Node & NPM
+1. Check whether Node is installed with: `node -v`
+	1. If you don't see something like `v8.9.4`,
+			you will need to [install Node](https://nodejs.org/en/download/) and run the installer.
+	1. Once the installers have run, RESTART your computer.
+	1. Verify that Node is now installed with: `node -v`
+	1. Verify that NPM is now installed with: `npm -v`
 
 #### Git
 1. Check whether `git` is installed with: `git --version`
@@ -45,11 +55,20 @@
 
 # Mac
 
+Do the following using your Terminal unless told otherwise.
+
 #### Ruby
 1. Check whether Ruby is installed with: `ruby --version`
 	1. If you don't see something like `ruby 2.5.0p0 (2017-12-25 revision 61468)`,
 			you will need to [install Ruby](https://www.ruby-lang.org/en/documentation/installation/#homebrew).
 	1. Verify that Ruby is now installed with: `ruby --version`
+
+#### Node & NPM
+1. Check whether Node is installed with: `node -v`
+	1. If you don't see something like `v8.9.4`,
+			you will need to [install Node](https://nodejs.org/en/download/) and run the installer.
+	1. Verify that Node is now installed with: `node -v`
+	1. Verify that NPM is now installed with: `npm -v`
 
 #### Git
 1. Check whether `git` is installed with: `git --version`
