@@ -58,7 +58,7 @@ $ node fizzbuzz.js 7
 1. Git ignore your `node_modules`. When we install new dependencies they can end up taking up a lot of room in our git repo.
 	This is not a nice thing to push to the cloud as it slows everything down. Since your `package.json` and `package-lock.json` will hold a record of
 	all your dependencies, you don't need to commit the actual folders at all, so it is safe to ignore them.
-	Create a new file called `.gitignore` (the `.` means it is hidden, so you won`t see it with a plain old `ls`), at put the following inside:
+	Create a new file called `.gitignore` (the `.` means it is hidden, so you won't see it with a plain old `ls`), at put the following inside:
 	```
 	node_modules/
 	```
@@ -148,10 +148,10 @@ So lets get going with our first test:
 	```
 1. Run the test: `npm run test`
 	This should fail with quite a lot of noise, but if you scroll up a little you should see
-	something like `ReferenceError: isDivisibleByThree is not defined`.
-	Which makes sense; we haven't defined that method anywhere. Time to write some code.
+	something like `ReferenceError: fizzbuzz is not defined`.
+	Which makes sense; we haven't defined any functionality anywhere. Time to write some code.
 
-[How your project should look]() at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/7547522cdecd99921164e31306c2321d6652b942) at this stage.
 
 ## Part 3: Make it green
 Now that we have our first failing test we are going to follow the errors given
@@ -203,7 +203,7 @@ So let's start with the first error we were given: `ReferenceError: isDivisibleB
 1. Run the test again. And we're green! Congrats, you have passed your first test.
 	Let's go wreck it.
 
-[How your project should look]() at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/48603a2f0e043b492b548abc5e2eaff45162d43b) at this stage.
 
 ## Part 4: Make it red
 Obviously we are not done yet. Hardcoding `true` like that is seen as a Very
@@ -211,7 +211,7 @@ Bad Thing, and also not very useful for our game. So let's write another test
 to force ourselves to do the right thing.
 
 **Steps**:
-1. In `fizzbuzz.spec.js` add a second `test` block under the first. (make sure
+1. In `fizzbuzz.spec.js` add a second `test` block under the first. (Make sure
 	you stay in the same `describe` block.)
 	```js
 		test('knows when a number NOT is divisible by 3',() => {
@@ -234,7 +234,7 @@ to force ourselves to do the right thing.
 1. Now when we run the tests, both should pass. Seeing as we have very little code
 	right now, there is no refactoring to be done so we can go on to writing more tests.
 
-[How your project should look]() at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/f64896a46e6420f13395185cadd88a08653ba105) at this stage.
 
 Commit this stage and push to github:
 ```
@@ -253,14 +253,14 @@ git push
 				expect(fizzbuzz.isDivisibleByFive(5)).toBeTruthy();
 		});
 	```
-1. Run the tests. Do you see `ReferenceError: isDivisibleByFive is not defined`?
+1. Run the tests. Do you see `TypeError: fizzbuzz.isDivisibleByFive is not a function`?
 1. Go define `isDivisibleByFive` in `fizzbuzz.js`. (just define, don't make it
 	do anything.) Don't forget to ensure your new function is also listed under `isDivisibleByThree`
-	inside the `modules.exports` brackets. (Hint: you will need to add a comma (`,`) after `isDivisibleByFive`.)
+	inside the `modules.exports` brackets. (Hint: you will need to add a comma (`,`) after `isDivisibleByThree`.)
 1. Run the tests. `Received: undefined`? Make your function return `true`.
 1. Run the tests. Green again?	Go back to your test file and write the opposing
   `test('is NOT divisible by 5'` block.
-1. Run the tests. `Received: undefined`? Fix your code to make it pass.
+1. Run the tests. `Received: true`? Fix your code to make it pass.
 
 Once you have all 4 tests passing, commit your work and push to github:
 ```
@@ -281,12 +281,12 @@ git commit -m "knows if numbers are divisible by 3 and 5"
 git push
 ```
 
-[How your project should look]() at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/3f2d843d3d2487d0c936a6e3376d106f6dd37d9d) at this stage.
 
 ## Part 6: First Refactor
 Right now we have three functions which are doing more or less the same thing.
 Let's see if we can [DRY](http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) this out a bit.
-1. In `fizzbuzz.js`, edit your code so that the 3 `isDivisibleBy*?` functions
+1. In `fizzbuzz.js`, edit your code so that the 3 `isDivisibleBy*` functions
 		are replaced by just 1 function.
 
 	```js
@@ -307,7 +307,14 @@ Let's see if we can [DRY](http://programmer.97things.oreilly.com/wiki/index.php/
   If you are having trouble making them pass, remember to read the failure messages
   carefully: jest is helpful and will generally point you in the right direction.
 
-[How your project should look]() at this stage.
+Once you all green again, commit your work and push to github:
+```
+git add fizzbuzz.js fizzbuzz.spec.js
+git commit -m "first refactor"
+git push
+```
+
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/22ba272b4a0601c403568cae292608209742acbb) at this stage.
 
 ## Part 7: FizzBuzz says
 So now our code can tell us whether a number is divisible by 3, 5 or 3 and 5, but we
@@ -369,7 +376,7 @@ the argument it is passed by using our `isDivisibleBy` function:
 	than "fizzbuzz". Make sure you check if a number can be divisible by 3 and 5 first.
 	Switch the order of your code to see your tests failing in this way.
 1. The last thing we need to do is write a test (and then the code) for when the
-  number is not divisible by 3 or 5. It should just return the number.
+  number is not divisible by 3, 5 or 3 and 5. It should just return the number.
 
 Once you have all 10 tests passing, commit your work and push to github:
 ```
@@ -378,7 +385,7 @@ git commit -m "says fizz, buzz and fizzbuzz"
 git push
 ```
 
-[How your project should look]() at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/6cb9fd5e63f6ab89fe4900120663417e23c7935a) at this stage.
 
 ## WooHoo!!
 

@@ -43,7 +43,7 @@ $ ./fizzbuzz.rb 7
 	cd workspace/fizzbuzz
 	git init
 	git remote add origin <URL OF YOUR REPO ONLINE>
-	echo "tdd exercisein ruby" > README.md
+	echo "tdd exercise in ruby" > README.md
 	git add README.md
 	git commit -m "readme.md"
 	git push -u origin master
