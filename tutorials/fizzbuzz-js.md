@@ -151,12 +151,12 @@ So lets get going with our first test:
 	something like `ReferenceError: fizzbuzz is not defined`.
 	Which makes sense; we haven't defined any functionality anywhere. Time to write some code.
 
-[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/7547522cdecd99921164e31306c2321d6652b942) at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz-js/tree/3cc028aa74e64f46a57c7d5daaddcbc4962b1474) at this stage.
 
 ## Part 3: Make it green
 Now that we have our first failing test we are going to follow the errors given
 by jest to make it pass.
-So let's start with the first error we were given: `ReferenceError: isDivisibleByThree is not defined`.
+So let's start with the first error we were given: `ReferenceError: fizzbuzz is not defined`.
 
 **Steps**:
 1. Create and open a new file called `fizzbuzz.js`.
@@ -203,7 +203,7 @@ So let's start with the first error we were given: `ReferenceError: isDivisibleB
 1. Run the test again. And we're green! Congrats, you have passed your first test.
 	Let's go wreck it.
 
-[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/48603a2f0e043b492b548abc5e2eaff45162d43b) at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz-js/tree/6794dac377984f3b412321e38c84e0b231acbea8) at this stage.
 
 ## Part 4: Make it red
 Obviously we are not done yet. Hardcoding `true` like that is seen as a Very
@@ -234,7 +234,7 @@ to force ourselves to do the right thing.
 1. Now when we run the tests, both should pass. Seeing as we have very little code
 	right now, there is no refactoring to be done so we can go on to writing more tests.
 
-[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/f64896a46e6420f13395185cadd88a08653ba105) at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz-js/tree/cfbb861f2fbc1f7c7c65d1dd1e71d54067a11a0f) at this stage.
 
 Commit this stage and push to github:
 ```
@@ -281,7 +281,7 @@ git commit -m "knows if numbers are divisible by 3 and 5"
 git push
 ```
 
-[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/3f2d843d3d2487d0c936a6e3376d106f6dd37d9d) at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz-js/tree/9de1ff9effd8e06181183fa2dec502b291b27230) at this stage.
 
 ## Part 6: First Refactor
 Right now we have three functions which are doing more or less the same thing.
@@ -314,7 +314,7 @@ git commit -m "first refactor"
 git push
 ```
 
-[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/22ba272b4a0601c403568cae292608209742acbb) at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz-js/tree/ab7e80ab589fb6b0f3db05a97d4e4df4165dffac) at this stage.
 
 ## Part 7: FizzBuzz says
 So now our code can tell us whether a number is divisible by 3, 5 or 3 and 5, but we
@@ -385,7 +385,7 @@ git commit -m "says fizz, buzz and fizzbuzz"
 git push
 ```
 
-[How your project should look](https://github.com/fouralarmfire/fizzbuzz/tree/6cb9fd5e63f6ab89fe4900120663417e23c7935a) at this stage.
+[How your project should look](https://github.com/fouralarmfire/fizzbuzz-js/tree/51700f1ca00ec96f9e71dc77166af9ab5cdffcda) at this stage.
 
 ## WooHoo!!
 
