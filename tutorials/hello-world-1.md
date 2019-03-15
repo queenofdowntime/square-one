@@ -11,8 +11,15 @@ To complete this task you will need to have learned how to use the [Command Line
 and [how to set up a new project](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-a-new-project).
 You should also have [set up your computer](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#mac-osx-setup) to be ready to code.
 
-TODO: what sort of program or language is this? explain what a shell and a 
-shell script is
+For this exercise we are going to write something called a "Shell Script". A shell is a user-interface designed to provide direct access to an operating
+system. Some shells have GUIs (Graphical User Interfaces), but these days when we talk about shells, we are mostly talking about Command Line Interfaces.
+A Shell Script, therefore, is a program designed to be run by a shell. Shell scripts are amazingly useful for automating repetitive command line tasks.
+Have to type the same 10 commands over and over? Throw them all in a file, and run just one line instead!
+
+This is essentially what we are going to be doing here: taking commands we would usually type into the command line, and putting them into a file
+which we can use to short-cut the process.
+
+There are lots of different kinds of shell which will respond to different scripting languages, and you can go ahead and Google them.
 
 ## Part 1: say "Hello World!"
 
@@ -33,14 +40,13 @@ shell script is
 1. When we execute this program we want it to print "Hello World!" to the terminal.
 
 	Looking back at our list of [basic commands](https://learnpythonthehardway.org/python3/appendix-a-cli/ex1.html), `echo` is the one we want:
-	Write `echo "Hello World!"` on the first line of your `hello` file.
+	write `echo "Hello World!"` on the first line of your `hello` file.
 
 1. Save the file and go to your terminal.
 
 1. Programs in the terminal are executed (run) by prefixing `./` to the filename.
 
-	There is a way to make our command be runnable without the `./`: you may be
-	already thinking "but `echo` etc are programs and they don't need a `./`", and
+	You may be already thinking "but `echo` etc are programs and they don't need a `./`", and
 	you would be correct. They can run without a `./` because the computer has been
 	configured to know where those programs live and can find them itself.
 
@@ -50,9 +56,10 @@ shell script is
 
 	Our `hello` program is brand new, so we have to tell the computer that the
 	program lives in the directory which we are currently in: `.`.
-	We will learn how to make the computer learn where our program is later.
+	(For bonus points you can google how to make the computer know where our program is
+	by using the `$PATH` variable.)
 
-	So for us, we need to run: `./hello`
+	So for now, we need to run: `./hello`
 
 	This should fail with something like `permission denied`.
   
@@ -82,6 +89,7 @@ shell script is
 	* the owner of the file has read and write permissions
 	* other members of the group that the owner is in has read permissions
 	* other users in general have read permissions
+	* nobody has execute permissions
 
 	This explains why we (as the owner of `hello`) can read and edit our script, but cannot
 	execute it.

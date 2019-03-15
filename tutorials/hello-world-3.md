@@ -46,7 +46,7 @@ not saying "Hello World!" anymore.
 	fi
 	```
 
-	The strange `fi` at the end tells the program that the `if/else` conditional
+	The strange `fi` at the end tells the interpreter that the `if/else` conditional
 	logic is over.
 
 1. Save and run.
