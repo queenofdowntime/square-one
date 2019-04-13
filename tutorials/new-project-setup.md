@@ -10,7 +10,17 @@ This tutorial will cover the steps you should take every time you start a new
 project, and then how to manage your project effectively.
 
 ## quick jump
-- [summary of commands](#tldr-summary-of-commands)
+0. [Summary of commands](#tldr-summary-of-commands)
+1. [Create local project](#part-1-create-your-project-locally)
+1. [Create remote version](#part-2-create-the-remote-version)
+1. [Connect local to remote](#part-3-connecting-the-two)
+1. [First commit](#part-4-first-commit)
+1. [Push to the cloud](#part-5-pushing-to-the-cloud)
+1. [Subsequent commits](#part-6-writing-and-publishing-our-first-program)
+1. [Note-taking in Markdown](#part-7-taking-notes)
+1. [Cloning](#part-8-getting-your-work-back-from-the-cloud)
+1. [Branching](#part-9-creating-a-work-in-progress-branch)
+1. [Merging](#part-10-merging-branches)
 
 ## tldr summary of commands
 For if you have already read the whole way through this tutorial and are just
