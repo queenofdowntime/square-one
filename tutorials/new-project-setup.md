@@ -18,9 +18,10 @@ project, and then how to manage your project effectively.
 1. [Push to the cloud](#part-5-pushing-to-the-cloud)
 1. [Subsequent commits](#part-6-writing-and-publishing-our-first-program)
 1. [Note-taking in Markdown](#part-7-taking-notes)
-1. [Cloning](#part-8-getting-your-work-back-from-the-cloud)
-1. [Branching](#part-9-creating-a-work-in-progress-branch)
-1. [Merging](#part-10-merging-branches)
+1. [Cloning](#part-8-getting-a-copy-of-your-work-from-the-cloud)
+1. [Pulling](#part-9-pulling-updates-from-the-cloud)
+1. [Branching](#part-10-creating-a-work-in-progress-branch)
+1. [Merging](#part-11-merging-branches)
 
 ## tldr summary of commands
 For if you have already read the whole way through this tutorial and are just
@@ -62,6 +63,15 @@ git push # push your new stuff to the cloud
 cd ~/code
 git clone <url of your repo online>
 cd <project-name>
+
+# commit some things in another version of the project, or using the online Github editor
+git pull # get those changes in your local version
+
+# can't pull because of local changes?
+git stash
+# or if those changes are not important
+git checkout <file path> # WARNING changes will be lost forever, be certain!
+git stash pop # recover stashed changes
 ```
 
 ## Part 1: Create your project locally
@@ -310,7 +320,7 @@ for markdown and you can learn how to render documentation using markdown [here]
 From now on, for every project or tutorial you do, take notes on what you learn
 like this so that you keep them together with the code you write.
 
-## Part 8: Getting your work back from the cloud
+## Part 8: Getting a copy of your work from the cloud
 
 So, your shiny new program is now safely stored in the cloud. But what if you want to carry on working
 from a different computer? What if you want to work on it with a friend and they need a copy? What if
@@ -333,7 +343,7 @@ please go to section **B** just below.
 		using `cd <path>` and `pwd`.
 1. Delete your `hello-world` project. Yes, I mean it. Type `rm -rf hello-world`. When you run `ls` you should see that `hello-world` no longer
 		exists.
-1. But that's fine! We can get it back: in Chrome, navigate to your project on Github and copy the URL. Then from within our `code` directory
+1. But that's fine! We can get it back: in your web browser, navigate to your project on Github and copy the URL. Then from within our `code` directory
 		we run:
 
 	```sh
@@ -346,7 +356,7 @@ please go to section **B** just below.
 1. Move out of your `hello-world` project: `cd ..`. If you run `pwd` you should see `/Users/<your name>/code`.*
 1. We are going to create a temporary place to clone this copy, so that we don't get it confused with the other one we have.
 		Make a new temporary directory and move into it: `mkdir temp && cd temp`.**
-1. In Chrome, navigate to your project on Github and copy the URL. Then from within our `temp` directory
+1. In your web browser, navigate to your project on Github and copy the URL. Then from within our `temp` directory
 		we run:
 
 	```sh
@@ -361,7 +371,7 @@ please go to section **B** just below.
 	# you can google to see how 'find' works
 	```
 
-1. And it's that easy! Since we only need one copy right now, we can delete our new one and the temporary directory we made:
+1. And it's that easy! Since we only need one copy, we can delete our new one and the temporary directory we made:
 
 	```sh
 	cd ..
@@ -375,10 +385,53 @@ the scope of this tutorial. For now: always check where you are before you clone
 `git clone <URL> hello-world-2`. This would have instructed git to clone the project in a directory named as `hello-world-2`. Without
 the argument, git will create a directory with the same name as the repo in your Github.
 
+
+## Part 9: Pulling updates from the cloud
+
+Now that you know you can work on your projects from other computers you are probably wondering: but how do I keep them all in sync?
+This is where `git pull` comes in.
+
+As we have discussed in Part 5, the "source of truth" for your projects is always the `upstream` version stored on Github. You should always
+therefore aim to ensure your local version is lined up with the remote version before you start adding new commits.*
+
+**Steps**:
+
+1. Navigate to your Github project in a web browser.
+1. Select your `README.md` from the list of files.
+1. At the top right of the file, there are 3 icons: a computer, a pencil, and a trash bin. Click the pencil.
+		This will put us into an edit mode. (Yes we can edit files on Github itself! I would not recommend doing this for actual
+		code changes, however, as there won't be any syntax highlighting. For markdown it can be helpful, since there is a useful
+		`Preview changes` button.)
+1. Add a line or two at the bottom of the file. Perhaps noting what you learned in the previous section, or just a test line which
+		you can remove later: it is not important.
+1. In the `Commit changes` section, a commit message has already been templated for you. You can change this or simply leave it as
+		"Update README.md".
+1. Click the green `Commit changes` button.
+1. Click on the `<> Code` tab at the top left, under your repo name. Underneath, there should be a link to your commits with a number indicating
+		how many you have done. Click this, and on the next page you will see your last "Update README.md" is at the top.
+1. Now back in your terminal, ensure you are in your project directory with `pwd`.
+1. Run `git log`. You should see that your local version is missing that latest commit.
+		If your logs are quite long, you will need to hit `q` to exit.
+1. Now we can pull down the latest commits simply by running `git pull`. If this fails, it may be because you have local
+		uncommitted changes, or because you are not in a git repo. Make sure you are in the right place with `pwd` and use `git stash`
+		to save any local changes to be dealt with later. If they are not important changes, you can clear them alltogether with `git checkout .`.
+1. Now if we run `git log` again, we can see that our local version is now up to date with the remote.
+1. If you stashed any changes, you can now get them back with `git stash pop`. Hopefully this will go smoothly and you will be able to
+		consider and commit those changes as normal. If you see an error along the lines of `merge conflict`, `git stash` them again and
+		you will learn how to resolve those conflicts in a later section.
+
+If you would like to play around more, you can follow the steps in Part 8 Section **B** above, and take it in turns to commit and push something
+in one project version and then pull down to another project version. Or if you do have two computers, try pushing and pulling commits between them!
+
+Don't forget: you will have to always push _to_ and pull _from_ the remote version on Github. It is possible to set your upstream to be a version on a personal computer
+but that is not in scope for this tutorial, which is about interacting with git via the cloud.
+
+\* We will cover what to do if they become misaligned later.
+
 #### Congratulations! You now know about basic project management. Keep going to learn more :).
 
 # Bonus points section! (More complex git flow)
-## Part 9: Creating a work in progress branch
+## Part 10: Creating a work in progress branch
 Let's add a new feature to our "Hello World!" program: right now it only greets
 the world, but it would be cool if it could say hello to specific people.
 
@@ -460,7 +513,7 @@ the world, but it would be cool if it could say hello to specific people.
 	git push origin wip-hello-name
 	```
 
-## Part 10: Merging branches
+## Part 11: Merging branches
 
 Now let's finish our new feature and merge everything back into `master`.
 
