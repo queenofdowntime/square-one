@@ -4,13 +4,18 @@ So now that you have [set up git properly](https://github.com/fouralarmfire/squa
 and know [how to use your terminal](https://learnpythonthehardway.org/python3/appendixa.html),
 you can use both to manage your projects and exercises as you learn.
 
+(If you have not done the above linked exercises, I suggest you do so first, since this document assumes knowledge gained from them.)
+
 This tutorial will cover the steps you should take every time you start a new
 project, and then how to manage your project effectively.
+
+## quick jump
+- [summary of commands](#tldr-summary-of-commands)
 
 ## tldr summary of commands
 For if you have already read the whole way through this tutorial and are just
 back here to remind yourself of the process.
-(If this is your first time here, please jump to [Part 1](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#part-1-create-your-project-locally).)
+(If this is your first time here, please jump to [Part 1](#part-1-create-your-project-locally).)
 
 - do not type the bits after `#`; they are just notes
 - words inside `<>` are placeholders, replace them with your details
@@ -23,7 +28,7 @@ git init # initialise git tracking for your local version
 
 git remote add origin <url of your repo online>
 
-echo "<project details>" >> README.md # optional, you can also do this later or write a longer one in a text editor
+echo "<short project description>" >> README.md # optional, you can also do this later or write a longer one in a text editor
 
 git status # see that there is a new untracked file
 git add README.md # track that file
@@ -42,8 +47,12 @@ git status # see the new file(s) are now tracked
 git commit -m "<brief message about what has changed in/been added to your project>" # commit to the new state/version
 git log # see your growing history
 git push # push your new stuff to the cloud
-```
 
+# switch to a new computer / accidentally delete your local copy
+cd ~/code
+git clone <url of your repo online>
+cd <project-name>
+```
 
 ## Part 1: Create your project locally
 Your project will exist in two locations: the `local` version and the `remote`
@@ -291,15 +300,81 @@ for markdown and you can learn how to render documentation using markdown [here]
 From now on, for every project or tutorial you do, take notes on what you learn
 like this so that you keep them together with the code you write.
 
+## Part 8: Getting your work back from the cloud
+
+So, your shiny new program is now safely stored in the cloud. But what if you want to carry on working
+from a different computer? What if you want to work on it with a friend and they need a copy? What if
+you accidentally erased your entire `~/code` directory and need to get all the contents back again?!
+(Full disclosure: I do that last one a lot!)
+
+For this we use `git clone` which does pretty much what you would expect: it creates a clone of project from the cloud
+at the point you tell it to. If you don't have another computer to test this on don't worry, you can have as many copies
+of the same project as you like, so we will just clone to your current computer.
+
+**Steps**:
+
+If you feel confident, and have committed and pushed everything, you can follow the steps in section **A**, if not
+please go to section **B** just below.
+
+**A**) 
+
+1. Move out of your project directory.* If you run `pwd` you should see `/Users/<your name>/code/hello-world`, so to move out type `cd ..`.
+		If you run `pwd` now you should see that you are in `/Users/<your name>/code`. If you get lost, you can always find your way back by
+		using `cd <path>` and `pwd`.
+1. Delete your `hello-world` project. Yes, I mean it. Type `rm -rf hello-world`. When you run `ls` you should see that `hello-world` no longer
+		exists.
+1. But that's fine! We can get it back: in Chrome, navigate to your project on Github and copy the URL. Then from within our `code` directory
+		we run:
+
+	```sh
+	git clone https://github.com/<YOUR USERNAME>/hello-world
+	```
+1. Now when you run `ls` again, you should see that `hello-world` is back!
+
+**B**) If you are not sure about deleting your project, you can leave it where it is and simply clone it to another location on your computer.
+
+1. Move out of your `hello-world` project: `cd ..`. If you run `pwd` you should see `/Users/<your name>/code`.*
+1. We are going to create a temporary place to clone this copy, so that we don't get it confused with the other one we have.
+		Make a new temporary directory and move into it: `mkdir temp && cd temp`.**
+1. In Chrome, navigate to your project on Github and copy the URL. Then from within our `temp` directory
+		we run:
+
+	```sh
+	git clone https://github.com/<your username>/hello-world
+	```
+
+1. Now when you run `ls`, you should see that `hello-world` is now here.
+1. You can run the following to see how many copies you have on your computer and where they are:
+
+	```sh
+	find ~ -name hello-world
+	# you can google to see how 'find' works
+	```
+
+1. And it's that easy! Since we only need one copy right now, we can delete our new one and the temporary directory we made:
+
+	```sh
+	cd ..
+	rm -rf temp
+	```
+
+\* Always ensure that you are not cloning repos into other repos. There is sometime a need and a way to do this, but it is far beyond
+the scope of this tutorial. For now: always check where you are before you clone!
+
+\*\* We could have cloned this without creating a temporary directory by simply passing a destination argument to our command:
+`git clone <URL> hello-world-2`. This would have instructed git to clone the project in a directory named as `hello-world-2`. Without
+the argument, git will create a directory with the same name as the repo in your Github.
+
 #### Congratulations! You now know about basic project management. Keep going to learn more :).
 
 # Bonus points section! (More complex git flow)
-## Part 8: Creating a work in progress branch
+## Part 9: Creating a work in progress branch
 Let's add a new feature to our "Hello World!" program: right now it only greets
 the world, but it would be cool if it could say hello to specific people.
 
 **Steps**:
 
+1. Move back to your `hello-world` directory: `cd ~/code/hello-world`.
 1. Complete the second [Hello World](https://github.com/fouralarmfire/square-one/blob/master/tutorials/hello-world-2.md#hello-world-2) exercise.
 1. Run `git status`. It should say that your `hello` file has changed.
 
@@ -375,7 +450,7 @@ the world, but it would be cool if it could say hello to specific people.
 	git push origin wip-hello-name
 	```
 
-## Part 9: Merging branches
+## Part 10: Merging branches
 
 Now let's finish our new feature and merge everything back into `master`.
 
