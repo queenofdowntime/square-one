@@ -22,10 +22,11 @@ project, and then how to manage your project effectively.
 1. [Pulling](#part-9-pulling-updates-from-the-cloud)
 1. [Branching](#part-10-creating-a-work-in-progress-branch)
 1. [Merging](#part-11-merging-branches)
+1. [Merge conflicts](#part-12-dealing-with-merge-conflicts)
 
 ## tldr summary of commands
 For if you have already read the whole way through this tutorial and are just
-back here to remind yourself of the process.
+back here to remind yourself of the commands.
 (If this is your first time here, please jump to [Part 1](#part-1-create-your-project-locally).)
 
 - do not type the bits after `#`; they are just notes
@@ -523,7 +524,7 @@ Now let's finish our new feature and merge everything back into `master`.
 1. Once your program is able to say hello both to one person and the world, commit
 	your changes and push to your 'wip' branch:
 
-	```
+	```sh
 	git add hello
 	git commit -m "say hello to person and world"
 	git push origin wip-hello-name
@@ -537,8 +538,8 @@ Now let's finish our new feature and merge everything back into `master`.
 	From your `wip-hello-name` branch, you can run `git log` and see your two
 	'wip' commits as well as your original commits which you did on `master`.
 
-	Switch back to the `master` branch with `git checkout master` and run `git log`
-	again. You should see that `master` only has the commits you made before you
+	Switch back to the `master` branch with `git checkout master` (you do not need the `-b` this time
+	as the branch already exists) and run `git log` again. You should see that `master` only has the commits you made before you
 	started working on the new feature.
 
 	To merge those commits into `master`, we need to run:
@@ -552,7 +553,7 @@ Now let's finish our new feature and merge everything back into `master`.
 	(You can learn more about how to use the Vim text editor by typing `vimtutor` into a new terminal window.)
 
 	Now if we run `git log` again, we see that `master` now has the commits we
-	made on `wip-hello-name`. We can now push our new feature on `master`: `git push`.
+	made on `wip-hello-name`. We can now push our new feature on `master` with `git push`.
 
 1. After `master` is up to date we can delete both our local and remote versions
 	of `wip-hello-name`:
@@ -564,5 +565,53 @@ Now let's finish our new feature and merge everything back into `master`.
 
 1. Don't forget to update your README with what you have learned.
 
+## Part 12: Dealing with merge conflicts
+
+What is a merge conflict? Merge conflicts happen when you have two commits which made a change at the exact same line in two separate versions.
+When you try to `git pull` git will need your help to figure out which version you are serious about. Usually even when several
+people are working on the same codebase, few are rarely working on the exact same section simultaneously, but it can happen.
+
+We are going to deliberately create a merge conflict so we can understand how to fix it.
+
+**Steps**:
+
+1. First make sure your local is up to date with your remote: ensure any commits are pushed and that you have pulled any changes
+	made remotely or in another version.
+1. In your web browser, navigate to your `README.md` and click on the edit button (see the first few steps of Part 9 if you need a refresh).
+1. Edit the first line of the file. It doesn't matter what you type, just make it different.
+1. Click the green `Commit changes` button.
+1. Do **NOT** pull the changes locally.
+1. Now, open your local version of your `README.md` in a text editor and edit the exact same first line as you did in the browser.
+	This time you may want to make a change you would be happy to keep (we will have to keep one of these versions, this may as well
+	be it).
+1. Add and commit your changes.
+1. And now we can run `git pull` in the terminal.
+	The last few lines of git's output should be something like:
+	```
+	CONFLICT (content): Merge conflict in README.md
+	Automatic merge failed; fix conflicts and then commit the result.
+	```
+1. Run `git status`. The output is telling us that the local and remote versions have diverged, and that each
+	has one commit which the other doesn't. It is telling us that both have modified the `README.md` file.
+	We have to fix the conflicts and commit the changes we _do_ want.
+1. Open your `README.md` in a text editor. It's probably not how you left it in either version, and it may be a little confusing to read,
+	but with practice it is possible to understand:
+	```
+	<<<<<<< HEAD
+	the changes you made locally are highlighted here, they are the HEAD (ie the latest point) at which your local version sits
+	=======
+	the changes you made elsewhere are highlighted here
+	>>>>>>> somenonsenseshaheredontworryaboutit
+	```
+	Now you have to decide which commit you actually want to keep. Simply delete the line(s) you don't want, and also any line
+	with `<<<<<<<` or `=======`.
+1. Once your `README.md` is back in a readable state, save the file, run `git add` and then `git commit` without any message.
+		For this commit, as it did for the branch merge in the previous part, git will open vim. Type `:wq` and then enter to exit vim.
+1. If you try to pull now, it should say `Already up to date` and you should now be safely able to push.
+
+This is a very simple example of a merge conflict dealing with just one line in one file.
+Huge conflicts can happen with multiple files and many lines, and they can be quite confusing
+to sort out, but by following the pattern above they are manageable. Always remember to read the git message:
+more often than not, git will tell you what to do.
 
 ### This tutorial is a work in progress. Refresh regularly for updates.
