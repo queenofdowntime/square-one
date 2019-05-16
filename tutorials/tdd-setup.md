@@ -70,6 +70,26 @@ Do the following using your Terminal unless told otherwise.
 	1. Verify that Node is now installed with: `node -v`
 	1. Verify that NPM is now installed with: `npm -v`
 
+#### Python
+
+If you are following the Python tutorial you can use either version 2:
+
+1. Check whether Python is installed with: `python --version`
+	1. If you don't see something like `Python 2.7.10`, you will need to install Python with brew: `brew install python`.
+	1. Verify that Python is now installed with: `python --version`
+1. Check whether pip is installed with: `pip --version`
+	1. If you don't see something like `pip 19.1 from /usr/local/lib/python2.7/site-packages/pip (python 2.7)`, you will need to install pip with brew: `brew install pip`.
+	1. Verify that pip is now installed with: `pip --version`
+
+Or the newer version 3:
+
+1. Check whether Python is installed with: `python3 --version`
+	1. If you don't see something like `Python 3.7.3`, you will need to install Python with brew: `brew install python3`.
+	1. Verify that Python is now installed with: `python --version`
+1. Check whether pip3 is installed with: `pip3 --version`
+	1. If you don't see something like `pip 19.0.3 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)`, you will need to install pip with brew: `brew install pip3`.
+	1. Verify that pip3 is now installed with: `pip3 --version`
+
 #### Git
 1. Check whether `git` is installed with: `git --version`
 	1. If you don't see something like `git version 2.9.2`,
