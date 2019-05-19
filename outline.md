@@ -48,7 +48,7 @@ you are a legit hacker now) is [pimp your terminal](http://jilles.me/badassify-y
 
 1. Use your Github account to sign up to [The Odin Project](https://www.theodinproject.com/home) and learn the basics of web development. _(ruby, javascript, html, css, databases, rails)_
 
-1. [Introduction to Test Driven Development](https://github.com/fouralarmfire/square-one/blob/master/tutorials/fizzbuzz-tdd.md#intro-to-test-driven-development-fizzbuzz). _(ruby, nodejs)_
+1. [Introduction to Test Driven Development](https://github.com/fouralarmfire/square-one/blob/master/tutorials/fizzbuzz-tdd.md#intro-to-test-driven-development-fizzbuzz). _(python, ruby, nodejs)_
 
 1. Use your Github account to sign up to [FreeCodeCamp](https://www.freecodecamp.org/). _(javascript, html, css)_
 
