@@ -13,7 +13,7 @@ for it.
 
 1. Complete exercises 0 to 15 of [Command Line Crash Course](https://learnpythonthehardway.org/python3/appendixa.html). _(shell)_
 
-1. Learn [how to to use git to manage projects](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-and-manage-a-new-project). From now on, everything you work on should be tracked and published in a git repository. _(shell)_
+1. Learn [how to to use git to manage projects](https://queenofdowntime.com/resources/tutorials/git). From now on, everything you work on should be tracked and published in a git repository. _(shell)_
 
 1. Complete exercises 0 to 43 of [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/). _(ruby)_
 

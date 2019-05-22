@@ -43,7 +43,6 @@ Do the following using your Command Prompt unless told otherwise.
 	1. Copy your the contents of `~/.ssh/id_rsa.pub` to the clipboard.
 	1. Login to Github in a browser. Go to `Settings > SSH and GPG keys > New SSH key / Add SSH key`.
 	1. Fill in the form fields with a name and your copied public key and click save.
-	1. You may want to complete a [quick tutorial](https://try.github.io/) first.
 
 #### Atom
 1. If you do not already have a text editor, go to [atom.io](https://atom.io/)
@@ -125,7 +124,6 @@ Or the newer version 3:
 
 	1. Login to Github in a browser. Go to `Settings > SSH and GPG keys > New SSH key / Add SSH key`.
 	1. Fill in the form fields with a name and your copied public key and click save.
-	1. You may want to complete a [quick tutorial](https://try.github.io/) first.
 
 #### Atom
 1. If you do not already have a text editor, go to [atom.io](https://atom.io/)
