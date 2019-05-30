@@ -7,8 +7,7 @@ $ ./hello
 Hello World!
 ```
 
-To complete this task you will need to have learned how to use the [Command Line](https://learnpythonthehardway.org/python3/appendixa.html),
-and [how to set up a new project](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#how-to-set-up-a-new-project).
+To complete this task you will need to have learned how to use the [Command Line](https://learnpythonthehardway.org/python3/appendixa.html).
 You should also have [set up your computer](https://github.com/fouralarmfire/square-one/blob/master/machine-setup.md#mac-osx-setup) to be ready to code.
 
 For this exercise we are going to write something called a "Shell Script". A shell is a user-interface designed to provide direct access to an operating
@@ -104,4 +103,4 @@ There are lots of different kinds of shell which will respond to different scrip
 
 Congratulations! You have just written your first ever program!
 
-Go back to the [project setup tutorial](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#part-6-writing-and-publishing-our-first-program).
+Go back to the [project setup tutorial](https://queenofdowntime.com/resources/tutorials/git#part-7-writing-and-publishing-our-first-program).

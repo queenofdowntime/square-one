@@ -52,4 +52,4 @@ not saying "Hello World!" anymore.
 1. Save and run.
 
 
-Go back to the [project setup tutorial](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#part-9-merging-branches).
+Go back to the [project setup tutorial](https://queenofdowntime.com/resources/tutorials/git#part-12-merging-branches).

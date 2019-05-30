@@ -44,4 +44,4 @@ This task builds on the previous [Hello World](https://github.com/fouralarmfire/
 
 1. Save and run, this time passing in a name: `./hello Marianne`
 
-Go back to the [project setup tutorial](https://github.com/fouralarmfire/square-one/blob/master/tutorials/new-project-setup.md#part-8-creating-a-work-in-progress-branch).
+Go back to the [project setup tutorial](https://queenofdowntime.com/resources/tutorials/git#part-11-creating-a-work-in-progress-branch).

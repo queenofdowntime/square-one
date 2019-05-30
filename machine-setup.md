@@ -21,6 +21,10 @@ Apple's developer tools.
 2. Click `install`, `agree` and `done` when the various pop-ups appear.
 
 ## git
+
+_If you are following the [Introduction to Git and Github Guide](https://queenofdowntime.com/resources/tutorials/git) you have already done this_
+_and can skip this step._
+
 Git is a version control system which lets you publish your work online and save
 versions of your code as you progress. Saving (or 'committing') work as you go
 means that you never really lose earlier versions: you can return to a previous
