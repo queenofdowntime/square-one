@@ -93,6 +93,8 @@ getting tougher.
 
 More steps will be added to this level soon, but for now see how you get on with:
 
+1. More advanced NodeJS tutorials with [CodeForGeek](https://codeforgeek.com/category/nodejs/). _(nodejs)_
+
 1. Learn how to contribute to Open Source repositories on [Open Source Friday](https://opensourcefriday.com/).
 
 1. Build games, sites and more by editing existing codebases on [Glitch](https://glitch.com/).
@@ -101,3 +103,8 @@ More steps will be added to this level soon, but for now see how you get on with
 
 1. Build your own [text-based adventure game](https://github.com/Callisto13/epacseon). _(python)_
 
+1. Learn how to write algorithms popular with interviewers with [Algodaily](https://algodaily.com/challenges). _(js, any)_
+
+1. [Build Tic-Tac-Toe in React](https://medium.com/front-end-weekly/how-to-build-simple-tic-tac-toe-game-with-react-54996ee14db2). _(nodejs, react)_
+
+1. [Get some ideas](https://medium.com/@PurpleGreenLemon/10-coding-prompts-for-your-portfolio-4a5266d86ede) for what to build next. _(any)_
