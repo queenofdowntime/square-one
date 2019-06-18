@@ -24,7 +24,7 @@ not saying "Hello World!" anymore.
 **Steps**:
 
 1. Open your program again.
-1. To make our program do one things under one set of circumstances, and something
+1. To make our program do one thing under one set of circumstances, and something
 	else under another, we are going to use `if/else` logic.
 
 	`if/else` statements are used in all programming languages to set a logical
