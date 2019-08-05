@@ -93,6 +93,8 @@ getting tougher.
 
 More steps will be added to this level soon, but for now see how you get on with:
 
+1. Build a [CRUD API with TDD](https://queenofdowntime.com/resources/tutorials/crud-py). _(python)_
+
 1. More advanced NodeJS tutorials with [CodeForGeek](https://codeforgeek.com/category/nodejs/). _(nodejs)_
 
 1. Learn how to contribute to Open Source repositories on [Open Source Friday](https://opensourcefriday.com/).
