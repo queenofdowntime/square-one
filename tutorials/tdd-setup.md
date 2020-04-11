@@ -2,6 +2,12 @@
 
 Do the following using your Command Prompt unless told otherwise.
 
+Check which tools you need on the exercise you are completing: you do not need
+them all.
+
+#### Command Prompt / Terminal
+1. Your command prompt app can be found in your start menu.
+
 #### Ruby
 1. Check whether Ruby is installed with: `ruby --version`
 	1. If you don't see something like `ruby 2.5.0p0 (2017-12-25 revision 61468)`,
@@ -16,6 +22,16 @@ Do the following using your Command Prompt unless told otherwise.
 	1. Once the installers have run, RESTART your computer.
 	1. Verify that Node is now installed with: `node -v`
 	1. Verify that NPM is now installed with: `npm -v`
+
+#### Golang
+1. Check whether Go is installed with: `go version`
+	1. If you don't see something like `go version go1.13.5 ...`, you will need to
+			[install Go](https://golang.org/doc/install#windows) using the MSI Installer.
+			(If you are more familiar with your command line, you can use the Zip archive.)
+	1. Once the installer has run, quit and re-open your Command Prompt
+	1. Verify that Go is now installed with the command `go version`
+	1. Don't forget to read the "Setting environment variables under Windows" section
+			on that Go install page.
 
 #### Git
 1. Check whether `git` is installed with: `git --version`
@@ -48,13 +64,17 @@ Do the following using your Command Prompt unless told otherwise.
 1. If you do not already have a text editor, go to [atom.io](https://atom.io/)
 	and follow installation instructions.
 
-#### Command Prompt
-1. Your command prompt can be found in your start menu.
-
-
 # Mac
 
 Do the following using your Terminal unless told otherwise.
+
+Check which tools you need on the exercise you are completing: you do not need
+them all.
+
+#### Terminal
+1. Your terminal is found in your Applications and can be opened by typing `cmd+space`
+	and then typing `terminal`.
+1. Alternatively, you can install [iTerm2](https://www.iterm2.com/downloads.html), which comes with additional features.
 
 #### Ruby
 1. Check whether Ruby is installed with: `ruby --version`
@@ -88,6 +108,14 @@ Or the newer version 3:
 1. Check whether pip3 is installed with: `pip3 --version`
 	1. If you don't see something like `pip 19.0.3 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)`, you will need to install pip with brew: `brew install pip3`.
 	1. Verify that pip3 is now installed with: `pip3 --version`
+
+#### Golang
+1. Check whether Go is installed with: `go version`
+	1. If you don't see something like `go version go1.13.5 ...`, you will need to
+			[install Go](https://golang.org/doc/install#macos). (If you are more
+			experienced, you can download and extract [the tarball](https://golang.org/doc/install#tarball)).
+	1. Close and re-open your terminal app.
+	1. Verify that Go has been installed with the command `go version`.
 
 #### Git
 1. Check whether `git` is installed with: `git --version`
@@ -129,7 +157,3 @@ Or the newer version 3:
 1. If you do not already have a text editor, go to [atom.io](https://atom.io/)
 	and follow installation instructions.
 
-#### Terminal
-1. Your terminal is found in your Applications and can be opened by typing `cmd+space`
-	and then typing `terminal`.
-1. Alternatively, you can install [iTerm2](https://www.iterm2.com/downloads.html), which comes with additional features.
